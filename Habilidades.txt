@@ -1,0 +1,23 @@
+BENIGNO
+
+Planta - Recupera vida
+Ar - Ataca novamente
+Fogo - Buff de dano 
+Agua - Regen (chance CRT), Miss
+Terra - Toma menos dano
+Raio - Attack Spd
+
+
+Luz - Ilumina o caminho
+
+MALIGNO
+
+Planta - Veneno
+Ar - Deleta inimigo
+Fogo - Dano
+Agua - Reduz CritRate
+Terra - Stun
+Raio - Choque
+
+
+Luz - Perde um ataque
