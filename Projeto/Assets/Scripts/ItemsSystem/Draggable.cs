@@ -46,12 +46,20 @@ namespace ItemsSystem
             _selection.Select();
         }
 
+        
         private void OnMouseExit()
         {
-            _mouseOnSelections.Remove(this);
+            
 
-            if (_selection == this)
+            if (_selection == this && _dragging != this)
             {
+                // if (_dragging)
+                // {
+                //     Drop();
+                //     _dragging = null;
+                // }
+                
+                _mouseOnSelections.Remove(this);
                 _selection.UnSelect();
                 if (_mouseOnSelections.Count > 1)
                 {
@@ -64,11 +72,11 @@ namespace ItemsSystem
                 }
             }
 
-            if (_dragging == this)
-            {
-                Drop();
-                _dragging = null;
-            }
+            // if (_dragging == this)
+            // {
+            //     Drop();
+            //     _dragging = null;
+            // }
         }
 
         protected SpriteRenderer spriteRenderer;
@@ -112,7 +120,8 @@ namespace ItemsSystem
             worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             delta = worldPos - lastFrame;
             //print(delta);
-            GetComponent<Rigidbody2D>().position += (Vector2) delta;
+            //GetComponent<Rigidbody2D>().position += (Vector2) delta;
+            GetComponent<Rigidbody2D>().position = worldPos;
             DeltaQueue.Enqueue(delta);
         }
 
