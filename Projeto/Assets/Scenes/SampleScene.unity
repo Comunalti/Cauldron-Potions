@@ -134,10 +134,10 @@ GameObject:
   - component: {fileID: 10106024}
   - component: {fileID: 10106023}
   - component: {fileID: 10106022}
-  - component: {fileID: 10106021}
   - component: {fileID: 10106025}
+  - component: {fileID: 10106021}
   m_Layer: 0
-  m_Name: Square
+  m_Name: ' Circle'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,9 +152,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 10106020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924abcf9b5e9472cac38e12f111219b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fd28cf12c7e8e84ab79da499765e3fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  material: {fileID: 0}
 --- !u!61 &10106022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -200,7 +202,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: aa7583a274de73446aee3acf5f5f4f0f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,7 +223,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -240,7 +242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10106020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

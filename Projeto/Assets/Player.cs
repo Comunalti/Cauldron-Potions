@@ -1,16 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using Random = UnityEngine.Random;
-
-public static class Extension
-{
-    public static T GetRandom<T>(this IEnumerable<T> current)
-    {
-        return current.ElementAt(Random.Range(0, current.Count()));
-    }
-}
 
 
 public class Player : Creature
