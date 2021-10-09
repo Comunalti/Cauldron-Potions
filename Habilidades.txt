@@ -12,11 +12,11 @@ Luz - Ilumina o caminho
 
 MALIGNO
 
-Planta - Veneno
+Planta - dano + Veneno
 Ar - Deleta inimigo
-Fogo - Dano
-Agua - Reduz CritRate
-Terra - Stun
+Fogo - dano + Fogo
+Agua - dano + Reduz CritRate
+Terra - dano + Stun
 Raio - Choque
 
 
