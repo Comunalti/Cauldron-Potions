@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/ISelectable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/Potions/FirePotion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotionSystem/PotionResult.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zFRM0DArXFBHJGxYACbTwaR5Wl" />
@@ -61,6 +62,7 @@
       <workItem from="1633741819797" duration="3947000" />
       <workItem from="1633747490141" duration="630000" />
       <workItem from="1633790283682" duration="19423000" />
+      <workItem from="1633813170229" duration="9517000" />
     </task>
     <servers />
   </component>

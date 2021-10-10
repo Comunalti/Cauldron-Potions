@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace ItemsSystem
 {
-    public class Ingredientable : Draggable
+    public class Ingredient : Draggable
     {
-        public Ingredient profile;
+        public PotionSystem.Ingredient profile;
     
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject == Cauldron.Instance.gameObject)
             {
-                Cauldron.Instance.Insert(this);
+                //Cauldron.Instance.Insert(this);
             }else if (other.gameObject.CompareTag(TagStrings.Floor))
             {
                 
