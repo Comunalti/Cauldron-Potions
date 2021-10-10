@@ -52,6 +52,7 @@ namespace ItemsSystem
         public IEnumerator PreparePotion()
         {
             var potionResult = PotionManager.Instance.GetPotionResult(cauldronItems.ToArray());
+            print($"potion result is {potionResult}");
             if (potionResult is null)
             {
                 //fail

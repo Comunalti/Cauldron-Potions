@@ -19,8 +19,15 @@ namespace PotionSystem
                 {
                  foreach (var KeyWord in recipe.GenerateCombinations())
                     {
-                        print(KeyWord);
-                        PotionMap.Add(KeyWord,potionResult);
+                        if (PotionMap.ContainsKey(KeyWord))
+                        {
+                            Debug.LogWarning($"key {KeyWord}, already exist");
+                        }
+                        else
+                        {
+                            print($"added key {KeyWord}");
+                            PotionMap.Add(KeyWord,potionResult);
+                        }
                     }
                 }
             }
