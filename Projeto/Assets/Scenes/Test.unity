@@ -669,7 +669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690551fab4344c09a2bb95b7ccd50500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrintTrace: 0
   PotionResults:
   - {fileID: 11400000, guid: 744ea7c7a25af234eb3f624b2c1011c2, type: 2}
   a1: {fileID: 11400000, guid: 224a6d14eaa09d049a30024625f39700, type: 2}
@@ -854,7 +853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8627b9721564448fbf16d4bfdcea44fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrintTrace: 0
   cauldronItems: []
   spawnPosition: {x: 6, y: 0}
   force: 0.33
@@ -955,8 +953,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cff3591334546f184a89fc676090a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrintTrace: 0
   inGame: []
+  ParticleSystemPrefab: {fileID: 0}
+  endMenu: {fileID: 0}
+  killCreature: {fileID: 0}
 --- !u!4 &1703029259
 Transform:
   m_ObjectHideFlags: 0
@@ -1327,6 +1327,7 @@ MonoBehaviour:
   creatureMinHealth: 0
   creatureCurrentHealth: 0
   transform: {fileID: 0}
+  animator: {fileID: 0}
   defense: 0
   stunChance: 0
   precision: 0
