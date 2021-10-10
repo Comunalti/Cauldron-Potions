@@ -13,6 +13,7 @@ namespace CombatSystem
         public float creatureMinHealth = 0;
         public float creatureCurrentHealth = 0;
         public new Transform transform;
+        public Animator animator;
         public float defense;
         public float stunChance;
         public float precision;
@@ -32,6 +33,7 @@ namespace CombatSystem
         private void Start()
         {
             transform = GetComponent<Transform>();
+            animator = GetComponent<Animator>();
         }
 
         private List<Action> GetLastList()
@@ -166,6 +168,11 @@ namespace CombatSystem
             {
                 this.evadePercent = 100f;
             }
+        }
+
+        public void DeathAnimation()
+        {
+            animator.Play("Death");
         }
     }
 }
