@@ -37,7 +37,7 @@ namespace ItemsSystem
         [ContextMenu("reset")]
         private void Reset()
         {
-            print("terminou");
+            print("limpou");
             cauldronItems = new List<PotionSystem.Ingredient>();
         }
         
@@ -56,13 +56,16 @@ namespace ItemsSystem
             if (potionResult is null)
             {
                 //fail
+                print("falhou");
                 Reset();
             }
             else
             {
                 //sucess
+                print("sucesso");
                 var gameObjectClone = potionResult.GetInstance(spawnPosition);
                 ThrowItem(gameObjectClone);
+                Reset();
             }
             yield break;
         }
