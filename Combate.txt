@@ -39,21 +39,35 @@ damage = baseAtk + (2 * poções feitas)
 ------- Efeitos das Poções -------
 
 Cura - Aumenta a vida atual do boneco em 10%
+(Planta+, Planta+)
 Resiliencia - Aumenta a vida máxima em 20
+(Terra+, Planta+)
 Defesa da Terra - Reduz o dano tomado em 5
+(Terra+, Terra+)
 Defesa da Água - Aumenta a taxa de evasão em 2%
+(Água+, Água+)
 Velocidade - Aumenta a velocidade em 1
+(Ar+, Ar+) ou (Raio, Raio)
 Precisão - Aumenta a chance de Crítico em 3%
+(Fogo+, Fogo+)
 Regeneração - Recupera 5% de vida durante 4
+(Água+, Planta+)
 
 
 Explosão - Cause 20 de dano
+(Fogo-, Fogo-)
 Veneno - Cause 7 de dano durante 3 Turnos
+(Planta-, Planta-)
 Podridão - Enoje o alvo, causando 10 de dano
+(Água-, Água-)
 Descarga Elétrica - Cause 8 de dano, com 20% de chance de stun
+(Raio, Raio)
 Pedrada - 25% de chance do alvo perder 3 turnos
+(Terra-, Terra-)
 Lentidão - 75% de chance do alvo perder 1 turno, reduz em 1 a velocidade
+(Ar-, Ar-)
 Convecção - 50% de chance um alvo leve para longe
+(Ar-, Fogo-)
 
 
 
