@@ -10,8 +10,7 @@ namespace PotionSystem
 
         public Dictionary<string, PotionResult> PotionMap = new Dictionary<string, PotionResult>();
 
-        public Ingredient a1;
-        public Ingredient a2;
+        
         protected override void SingletonStarted()
         {
             foreach (var potionResult in PotionResults)

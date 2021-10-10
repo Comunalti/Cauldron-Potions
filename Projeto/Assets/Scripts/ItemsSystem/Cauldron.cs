@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DG.Tweening;
 using PotionSystem;
+using Unity.Collections;
 using UnityEngine;
 
 namespace ItemsSystem
@@ -12,6 +13,8 @@ namespace ItemsSystem
         public Vector2 spawnPosition;
         public float force;
 
+        // public GameObject goodPrefab;
+        // public GameObject badPrefab;
 
         private Transform _transform;
         protected override void SingletonStarted()
@@ -24,6 +27,10 @@ namespace ItemsSystem
             cauldronItems.Add(ingredient.profile);
             Destroy(ingredient.gameObject);
             TweenSquash();
+            if (cauldronItems.Count>=2)
+            {
+                StartCoroutine(PreparePotion());
+            }
         }
         
         
@@ -42,7 +49,7 @@ namespace ItemsSystem
         }
         
         [ContextMenu("Prepare")]
-        public void PreparePotion()
+        public IEnumerator PreparePotion()
         {
             var potionResult = PotionManager.Instance.GetPotionResult(cauldronItems.ToArray());
             if (potionResult is null)
@@ -53,8 +60,10 @@ namespace ItemsSystem
             else
             {
                 //sucess
-                var gameObjectClone = Instantiate(potionResult.Prefab,spawnPosition,Quaternion.identity);
+                var gameObjectClone = potionResult.GetInstance(spawnPosition);
+                ThrowItem(gameObjectClone);
             }
+            yield break;
         }
 
         public void ThrowItem(GameObject gameObject)

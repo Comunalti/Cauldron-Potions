@@ -13,7 +13,7 @@ namespace ItemsSystem
 
         public event ActivationEventHandler ActivationEvent;
 
-        public string name;
+        //public string name;
 
         protected abstract IEnumerator MainEffect(Creature creature);
         
