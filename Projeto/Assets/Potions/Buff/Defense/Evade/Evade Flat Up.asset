@@ -15,4 +15,4 @@ MonoBehaviour:
   Recipes:
   - {fileID: 11400000, guid: 73e804e7dfab85848bedf61673114266, type: 2}
   - {fileID: 11400000, guid: fb15450d7ad706846b7985e1a1dfd308, type: 2}
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 6296956553704931887, guid: f4a89bb04ae6a4e45889114acc2691e6, type: 3}
