@@ -200,3 +200,1684 @@ Received Import Request.
 Start importing Assets/Potions/Ingredient/Pedra.asset using Guid(ccb38a278a416eb41bb52cdfea39dcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfee5676b3aa325d48ed16182d2d952f') in 0.019278 seconds 
   Import took 0.037807 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007012 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.786 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1787ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1512ms)
+			LoadAssemblies (190ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (608ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (512ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (143ms)
+				ProcessInitializeOnLoadAttributes (346ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.8 MB.
+System memory in use after: 100.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2732.
+Total: 5.318200 ms (FindLiveObjects: 0.350700 ms CreateObjectMapping: 0.243600 ms MarkObjects: 4.697400 ms  DeleteObjects: 0.024600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.775 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1776ms)
+		BeginReloadAssembly (219ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1472ms)
+			LoadAssemblies (197ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (508ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (579ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (411ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.8 MB.
+System memory in use after: 100.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2735.
+Total: 4.314800 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.100000 ms MarkObjects: 3.959100 ms  DeleteObjects: 0.026700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 306.675757 seconds.
+  path: Assets/Potions/Ingredient/Planta Boa.asset
+  artifactKey: Guid(84e8c7b7c2107a943960fbb34d9ca010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Planta Boa.asset using Guid(84e8c7b7c2107a943960fbb34d9ca010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18339ad65dd3130a3b4e05983f828a6') in 0.023635 seconds 
+  Import took 0.028444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.748537 seconds.
+  path: Assets/Potions/Ingredient/Raio.asset
+  artifactKey: Guid(d186609f6b0db7e4bbbb8598d01f5f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Raio.asset using Guid(d186609f6b0db7e4bbbb8598d01f5f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03420a60d7e547735bb687172559aff2') in 0.012155 seconds 
+  Import took 0.018806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.539294 seconds.
+  path: Assets/Potions/Ingredient/Fogo Bom.asset
+  artifactKey: Guid(e6595ebdac0b5df4f986e0bd6a9888b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Fogo Bom.asset using Guid(e6595ebdac0b5df4f986e0bd6a9888b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53755c10dd13b343c305da93e4933b39') in 0.014294 seconds 
+  Import took 0.038338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.743039 seconds.
+  path: Assets/Potions/Ingredient/Planta Bom.asset
+  artifactKey: Guid(84e8c7b7c2107a943960fbb34d9ca010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Planta Bom.asset using Guid(84e8c7b7c2107a943960fbb34d9ca010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7febac50786be6392429e2ac55f7a533') in 0.010453 seconds 
+  Import took 0.017214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.824820 seconds.
+  path: Assets/Potions/Ingredient/Pedra Bom.asset
+  artifactKey: Guid(9b44063a1fd66cc4fa143c2c9cdebe52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Pedra Bom.asset using Guid(9b44063a1fd66cc4fa143c2c9cdebe52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4948c31c821b93ce7c7401f71e8d74a8') in 0.011572 seconds 
+  Import took 0.028093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.170078 seconds.
+  path: Assets/Potions/FirePotion
+  artifactKey: Guid(ed28b0f67074589459527665ea426266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/FirePotion using Guid(ed28b0f67074589459527665ea426266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5574b855aaa0be2624bdd2226a7f5e46') in 0.009925 seconds 
+  Import took 0.015705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052689 seconds.
+  path: Assets/Potions/FirePotion/Fire Potion.prefab
+  artifactKey: Guid(ec699d45d9a13ce4393a611a3f487c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/FirePotion/Fire Potion.prefab using Guid(ec699d45d9a13ce4393a611a3f487c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd67490ea7ebc7d60eff23e7147e458') in 0.165341 seconds 
+  Import took 0.182214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Potions/FirePotion/FirePotionResult.asset
+  artifactKey: Guid(744ea7c7a25af234eb3f624b2c1011c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/FirePotion/FirePotionResult.asset using Guid(744ea7c7a25af234eb3f624b2c1011c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ab5a55a688d46b176ad02a718330e2') in 0.038279 seconds 
+  Import took 0.065916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Potions/FirePotion/FireRecipe1.asset
+  artifactKey: Guid(0e782c336a495fb48be1f5aab16fa81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/FirePotion/FireRecipe1.asset using Guid(0e782c336a495fb48be1f5aab16fa81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a3f76d1c6da2f5bc9926891849c324') in 0.019007 seconds 
+  Import took 0.026169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Potions/FirePotion/FireRecipe2.asset
+  artifactKey: Guid(93103edb1138ca04199c0ec9a761ba8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/FirePotion/FireRecipe2.asset using Guid(93103edb1138ca04199c0ec9a761ba8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5704ebb9145b748ba28812bdae43e1b') in 0.020605 seconds 
+  Import took 0.040912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.006295 seconds.
+  path: Assets/Potions/HealPotion
+  artifactKey: Guid(69be6390b30a59845a7d610d5e6806fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/HealPotion using Guid(69be6390b30a59845a7d610d5e6806fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f311e3f997bb4a07bde11273389097e3') in 0.009709 seconds 
+  Import took 0.023208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.861750 seconds.
+  path: Assets/Potions/HealPotion/Recipe1.asset
+  artifactKey: Guid(268ce3022d60ac748a0b207a5ad25e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/HealPotion/Recipe1.asset using Guid(268ce3022d60ac748a0b207a5ad25e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef8d966cd35b4f2efe7fc0c86d94b26') in 0.014052 seconds 
+  Import took 0.018918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.666000 seconds.
+  path: Assets/Potions/HealPotion/Receita.asset
+  artifactKey: Guid(ac0af1da19eddfd4f9d295dabe53c9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/HealPotion/Receita.asset using Guid(ac0af1da19eddfd4f9d295dabe53c9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace9d3e410b6d4253125f28b7b79746b') in 0.012675 seconds 
+  Import took 0.018000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.708718 seconds.
+  path: Assets/Potions/HealPotion/HealPotion.asset
+  artifactKey: Guid(7f63ada2958a799439e2637be3180854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/HealPotion/HealPotion.asset using Guid(7f63ada2958a799439e2637be3180854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba88fd865e6d8a7dff905ada6fe4c27') in 0.004712 seconds 
+  Import took 0.014254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.073678 seconds.
+  path: Assets/Palhetas/GroundTiles2/GroundTiles2.prefab
+  artifactKey: Guid(38727b45ffa093346ada22b0c0c7f1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Palhetas/GroundTiles2/GroundTiles2.prefab using Guid(38727b45ffa093346ada22b0c0c7f1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3c963086bb7bc74c46124d2fa852db') in 0.093187 seconds 
+  Import took 0.137474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Palhetas/PALHETA4/PALHETA3.prefab
+  artifactKey: Guid(7197bcaa405de8943b7033e14396ae61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Palhetas/PALHETA4/PALHETA3.prefab using Guid(7197bcaa405de8943b7033e14396ae61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9de41a7a925e634c1259b90d7233c1f') in 0.431679 seconds 
+  Import took 0.440873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Palhetas/GroundTiles3/Teste_3.prefab
+  artifactKey: Guid(dbf7140053d099d45be71fb844d4fe88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Palhetas/GroundTiles3/Teste_3.prefab using Guid(dbf7140053d099d45be71fb844d4fe88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fb83f3c68703fd5c43fd68610cbd0a') in 0.049684 seconds 
+  Import took 0.056580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.443043 seconds.
+  path: Assets/Scenes/Test.unity
+  artifactKey: Guid(134ace248c0fad843a6e5dfde30a63a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test.unity using Guid(134ace248c0fad843a6e5dfde30a63a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4be91695fd98a613e4cab461a3a7589') in 0.012760 seconds 
+  Import took 0.048335 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006841 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.826 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1827ms)
+		BeginReloadAssembly (210ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1534ms)
+			LoadAssemblies (213ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (485ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (567ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (173ms)
+				ProcessInitializeOnLoadAttributes (363ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (52ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.8 MB.
+System memory in use after: 103.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2745.
+Total: 7.059200 ms (FindLiveObjects: 0.265100 ms CreateObjectMapping: 0.124200 ms MarkObjects: 6.638900 ms  DeleteObjects: 0.028700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 327.351526 seconds.
+  path: Assets/Potions/HealPotion/HealPotion.prefab
+  artifactKey: Guid(d84ab4f8d9f1f9c498012bdab3a9d7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/HealPotion/HealPotion.prefab using Guid(d84ab4f8d9f1f9c498012bdab3a9d7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45e17acab3f12fbffbab226aac7f816') in 0.143570 seconds 
+  Import took 0.259778 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010560 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.278 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3279ms)
+		BeginReloadAssembly (387ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (95ms)
+		EndReloadAssembly (2732ms)
+			LoadAssemblies (415ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (940ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (148ms)
+			SetupLoadedEditorAssemblies (1002ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (311ms)
+				ProcessInitializeOnLoadAttributes (652ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.9 MB.
+System memory in use after: 103.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2749.
+Total: 5.071300 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.115700 ms MarkObjects: 4.670800 ms  DeleteObjects: 0.023000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 276.036450 seconds.
+  path: Assets/Potions/Ingredient/Ar bom.asset
+  artifactKey: Guid(5e614aaf0e33ccd4ba18991ef623e601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Ar bom.asset using Guid(5e614aaf0e33ccd4ba18991ef623e601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7bb228e9ae0bd06b65526b4e16498d3') in 0.129087 seconds 
+  Import took 0.156836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.451605 seconds.
+  path: Assets/Potions/Ingredient/Terra Bom.asset
+  artifactKey: Guid(e447103ca74604746a50ba88335f951a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Terra Bom.asset using Guid(e447103ca74604746a50ba88335f951a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f287e73bb710cb0653ca7d44555848') in 0.012674 seconds 
+  Import took 0.040382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.194658 seconds.
+  path: Assets/Potions/Ingredient/Agua Bom.asset
+  artifactKey: Guid(0ccf633fca0626143b2b36c9e32e3a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Agua Bom.asset using Guid(0ccf633fca0626143b2b36c9e32e3a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bef2f7c6cb54e193a72af0140ef938e') in 0.011996 seconds 
+  Import took 0.024248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.939302 seconds.
+  path: Assets/Potions/Ingredient/Agua Ruim.asset
+  artifactKey: Guid(1a5c8aa167c736f45bd271c1c375e8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Agua Ruim.asset using Guid(1a5c8aa167c736f45bd271c1c375e8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7f3fc112b33a986efe6d435b4094a2') in 0.013914 seconds 
+  Import took 0.022463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.207788 seconds.
+  path: Assets/Potions/Ingredient/Ar Ruim.asset
+  artifactKey: Guid(c369cb8c4a31bbb42acf6f691089a530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Ar Ruim.asset using Guid(c369cb8c4a31bbb42acf6f691089a530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d226ddf4abf04325145d43f40ca22d0') in 0.011353 seconds 
+  Import took 0.052770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.142545 seconds.
+  path: Assets/Potions/Ingredient/Fogo Ruim.asset
+  artifactKey: Guid(d74d09e80b382c54cb37fd506413a724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Fogo Ruim.asset using Guid(d74d09e80b382c54cb37fd506413a724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0bc753eb1d0b0e0ce4033abc9e3ae7') in 0.015456 seconds 
+  Import took 0.023268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.554412 seconds.
+  path: Assets/Potions/Ingredient/Planta Rui.asset
+  artifactKey: Guid(64b8245d9ddb53647badec220a62e869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Planta Rui.asset using Guid(64b8245d9ddb53647badec220a62e869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b32a2c9a5d47f95ffe0d378dc70b921') in 0.011177 seconds 
+  Import took 0.016902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.309823 seconds.
+  path: Assets/Potions/Ingredient/Planta Ruim.asset
+  artifactKey: Guid(64b8245d9ddb53647badec220a62e869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Planta Ruim.asset using Guid(64b8245d9ddb53647badec220a62e869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df901673d04acb38d004b27407b08fc') in 0.011290 seconds 
+  Import took 0.025865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.755000 seconds.
+  path: Assets/Potions/Ingredient/Terra Ruim.asset
+  artifactKey: Guid(07eab268aebe53e45b30f8004511435c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Terra Ruim.asset using Guid(07eab268aebe53e45b30f8004511435c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80630796886486c7d73499c6818b3e64') in 0.011361 seconds 
+  Import took 0.028075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.761121 seconds.
+  path: Assets/Potions/Damage % Bonus
+  artifactKey: Guid(ed28b0f67074589459527665ea426266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage % Bonus using Guid(ed28b0f67074589459527665ea426266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e2d87a37b7b4c18dcecf4a95d02664') in 0.013458 seconds 
+  Import took 0.020382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.326370 seconds.
+  path: Assets/Potions/Damage Flat Bonus
+  artifactKey: Guid(bebf5bed0f9cae84c98d10c6312a26cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage Flat Bonus using Guid(bebf5bed0f9cae84c98d10c6312a26cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa4c713ac32342b3c2c279b4d8dfc59') in 0.010402 seconds 
+  Import took 0.023005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.305633 seconds.
+  path: Assets/Potions/Healing
+  artifactKey: Guid(69be6390b30a59845a7d610d5e6806fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Healing using Guid(69be6390b30a59845a7d610d5e6806fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b406695d832c2c362bf398a2c5413a94') in 0.013246 seconds 
+  Import took 0.019668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.298372 seconds.
+  path: Assets/Potions/Defense
+  artifactKey: Guid(946bcd5da3e7dda45a5fb8caa95238d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Defense using Guid(946bcd5da3e7dda45a5fb8caa95238d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71903930e9d35dd211e31ef807ac538') in 0.017651 seconds 
+  Import took 0.041067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.062314 seconds.
+  path: Assets/Potions/Damage Bônus
+  artifactKey: Guid(e13223494b360d647819a93fbca74258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage Bônus using Guid(e13223494b360d647819a93fbca74258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d329d9e3285b2d8db125c23a45dc55d') in 0.009908 seconds 
+  Import took 0.016918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.701536 seconds.
+  path: Assets/Potions/Damage Bônus/% Bonus
+  artifactKey: Guid(ed28b0f67074589459527665ea426266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage Bônus/% Bonus using Guid(ed28b0f67074589459527665ea426266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081786b799a0c248b4b1900b5bd0a276') in 0.015024 seconds 
+  Import took 0.043145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.825437 seconds.
+  path: Assets/Potions/Damage Bônus/Flat Bonus
+  artifactKey: Guid(bebf5bed0f9cae84c98d10c6312a26cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage Bônus/Flat Bonus using Guid(bebf5bed0f9cae84c98d10c6312a26cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a29bbd64d52239568d9195b0ea1e52') in 0.012559 seconds 
+  Import took 0.036475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.146522 seconds.
+  path: Assets/Potions/Damage Bonus
+  artifactKey: Guid(e13223494b360d647819a93fbca74258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage Bonus using Guid(e13223494b360d647819a93fbca74258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0509f0e9c667f9707d9beab0a53a69c9') in 0.012519 seconds 
+  Import took 0.033371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.215495 seconds.
+  path: Assets/Potions/Damage
+  artifactKey: Guid(e13223494b360d647819a93fbca74258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Damage using Guid(e13223494b360d647819a93fbca74258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d5250e7bd932aa02468154ed9dd9ab') in 0.016974 seconds 
+  Import took 0.022422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.217154 seconds.
+  path: Assets/Potions/aa
+  artifactKey: Guid(93abfc8ff52d73d4b92590f8580c0f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/aa using Guid(93abfc8ff52d73d4b92590f8580c0f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e431eecd98520190ee78f2fac01a513') in 0.011016 seconds 
+  Import took 0.034971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.265230 seconds.
+  path: Assets/Potions/Speed
+  artifactKey: Guid(93abfc8ff52d73d4b92590f8580c0f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Speed using Guid(93abfc8ff52d73d4b92590f8580c0f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5e1d1408240d2c10c7be6c6c63628f0') in 0.011746 seconds 
+  Import took 0.018712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.085138 seconds.
+  path: Assets/Potions/Buff
+  artifactKey: Guid(bc3c2c5072f36244db58595df05e4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff using Guid(bc3c2c5072f36244db58595df05e4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd8fac305a7f477380babaf72fddf6e') in 0.009795 seconds 
+  Import took 0.038505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.555752 seconds.
+  path: Assets/Potions/Debuff
+  artifactKey: Guid(bacb23c153d99934cb80decd449abfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff using Guid(bacb23c153d99934cb80decd449abfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b422192bcaba2aafcd80138b86dd40') in 0.009792 seconds 
+  Import took 0.015703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.899780 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def
+  artifactKey: Guid(3eccc29d96545eb4597cddaaaffe325f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def using Guid(3eccc29d96545eb4597cddaaaffe325f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fab1a20f7ad25ce27a9387a8214b30') in 0.010297 seconds 
+  Import took 0.029457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.776977 seconds.
+  path: Assets/Potions/Buff/Defense/Evade Bonus
+  artifactKey: Guid(1f7f1e0e8bd2f3e40aa5d9fffee54156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade Bonus using Guid(1f7f1e0e8bd2f3e40aa5d9fffee54156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a3e2cd544166d5defc74b422f71404') in 0.010492 seconds 
+  Import took 0.017192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.982484 seconds.
+  path: Assets/Potions/Buff/Defense/Evade
+  artifactKey: Guid(1f7f1e0e8bd2f3e40aa5d9fffee54156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade using Guid(1f7f1e0e8bd2f3e40aa5d9fffee54156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57cc9bbc8ed4502eec546e5fda28813') in 0.012091 seconds 
+  Import took 0.018329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.877007 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Rate
+  artifactKey: Guid(6c8a51167b1b0c3438c0d9caaaf14793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Rate using Guid(6c8a51167b1b0c3438c0d9caaaf14793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f6b961855fe2aa3cb62bc13aac7039') in 0.010844 seconds 
+  Import took 0.016406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.723641 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage
+  artifactKey: Guid(7aec0580364e8a747adefd03ac839afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage using Guid(7aec0580364e8a747adefd03ac839afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8dce045466346ad4207dcfe2c5e72a') in 0.009679 seconds 
+  Import took 0.016513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 157.144612 seconds.
+  path: Assets/DOTween_1_2_632/DOTween/Editor/Imgs/DOTweenIcon.png
+  artifactKey: Guid(9e828ee8e5aa5424a95baeede531e4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DOTween_1_2_632/DOTween/Editor/Imgs/DOTweenIcon.png using Guid(9e828ee8e5aa5424a95baeede531e4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffcd8d7c44068393e96422e663a4945') in 0.469014 seconds 
+  Import took 0.475335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/DOTween_1_2_632/DOTween/Editor/Imgs/Footer.png
+  artifactKey: Guid(d9c286a867b400247bf0e43bd4a65d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DOTween_1_2_632/DOTween/Editor/Imgs/Footer.png using Guid(d9c286a867b400247bf0e43bd4a65d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400d89cd84de876d0b931991b55d532b') in 0.082611 seconds 
+  Import took 0.102311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/DOTween_1_2_632/DOTween/Editor/Imgs/DOTweenMiniIcon.png
+  artifactKey: Guid(796dc1a2b7fdc2945bdf7d833b911df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DOTween_1_2_632/DOTween/Editor/Imgs/DOTweenMiniIcon.png using Guid(796dc1a2b7fdc2945bdf7d833b911df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e81fdffcc26e8605ddd2c800c551a8c') in 0.100614 seconds 
+  Import took 0.121673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/DOTween_1_2_632/DOTween/Editor/Imgs/Header.jpg
+  artifactKey: Guid(119fdc736057a064d9d3578adab7dfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DOTween_1_2_632/DOTween/Editor/Imgs/Header.jpg using Guid(119fdc736057a064d9d3578adab7dfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e4fac5bc548ac4026d621d1d4fa973') in 0.093272 seconds 
+  Import took 0.115875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/DOTween_1_2_632/DOTween/Editor/Imgs/Footer_dark.png
+  artifactKey: Guid(447fd7a9723ddc645b456a3f3dacbf04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DOTween_1_2_632/DOTween/Editor/Imgs/Footer_dark.png using Guid(447fd7a9723ddc645b456a3f3dacbf04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd1d7d98890786341a1955237c8d157') in 0.051689 seconds 
+  Import took 0.056005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/SpriteOutline/Demo/Textures/Flower.png
+  artifactKey: Guid(33e1e6147b08d6d4ab5a134dd49ed962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Textures/Flower.png using Guid(33e1e6147b08d6d4ab5a134dd49ed962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b3f7b79441252f3ef12a961738f153') in 0.696236 seconds 
+  Import took 0.701615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/SpriteOutline/Demo/Textures/tiles1.png
+  artifactKey: Guid(35f23c48db908de47a926c4bb1831818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Textures/tiles1.png using Guid(35f23c48db908de47a926c4bb1831818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e307a6d2c373233fca048c4eb8943fb') in 0.094322 seconds 
+  Import took 0.116504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.704828 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Solid/Solid_frame_outside.mat
+  artifactKey: Guid(a12396b1842db4748b1ba2aac0c1af1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Solid/Solid_frame_outside.mat using Guid(a12396b1842db4748b1ba2aac0c1af1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75c6b793b43cb93d6924e083e36bc20') in 0.121678 seconds 
+  Import took 0.142344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.514976 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Image/Image_frame_outside.mat
+  artifactKey: Guid(768ac29f602a0ec4e9181b9d0a67d4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Image/Image_frame_outside.mat using Guid(768ac29f602a0ec4e9181b9d0a67d4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc39310c9485f369c8b23f7fac029f1') in 0.038689 seconds 
+  Import took 0.077470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Solid/Solid_frame_inside_over.mat
+  artifactKey: Guid(5ea5e69bac2288f49a20f21894e5d475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Solid/Solid_frame_inside_over.mat using Guid(5ea5e69bac2288f49a20f21894e5d475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca442facdb3343be9eccb3fc3daca19f') in 0.052625 seconds 
+  Import took 0.061510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Solid/Solid_frame_inside_under.mat
+  artifactKey: Guid(583db57eb31993c4b992fa0f13152214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Solid/Solid_frame_inside_under.mat using Guid(583db57eb31993c4b992fa0f13152214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5397cffce1f4e0715bada3880ca32640') in 0.036025 seconds 
+  Import took 0.041133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Image/Image_frame_inside_under_tile.mat
+  artifactKey: Guid(289e052d3830b9348a6c03affc992941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Image/Image_frame_inside_under_tile.mat using Guid(289e052d3830b9348a6c03affc992941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af636e22bc335627fe0cd458408e5901') in 0.061389 seconds 
+  Import took 0.089037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Image/Image_frame_inside_over.mat
+  artifactKey: Guid(f6465e38185111849893f54259b432e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Image/Image_frame_inside_over.mat using Guid(f6465e38185111849893f54259b432e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e766c33e9707f8dad783a555891d5c3d') in 0.055865 seconds 
+  Import took 0.077964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Solid/Solid_Contour_outside.mat
+  artifactKey: Guid(5a6db85ebb9466f4b90af9ebdd3c4fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Solid/Solid_Contour_outside.mat using Guid(5a6db85ebb9466f4b90af9ebdd3c4fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6848c9fed5def494bdafc5c7fd8dae') in 0.040699 seconds 
+  Import took 0.048157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Solid/Solid_Contour_inside.mat
+  artifactKey: Guid(4e0ae13635569ec4faae7fbcd37a0854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Solid/Solid_Contour_inside.mat using Guid(4e0ae13635569ec4faae7fbcd37a0854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee88a742382317b6497e6fdec4477f6') in 0.036423 seconds 
+  Import took 0.051466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_contour_inside.mat
+  artifactKey: Guid(aa7583a274de73446aee3acf5f5f4f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_contour_inside.mat using Guid(aa7583a274de73446aee3acf5f5f4f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17fc8ac41d1a2af47081fb1ea2ee8bf') in 0.034190 seconds 
+  Import took 0.046336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Image/Image_contour_inside.mat
+  artifactKey: Guid(7ef81b702dce0a44eb708e18f06e5579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Image/Image_contour_inside.mat using Guid(7ef81b702dce0a44eb708e18f06e5579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84bb00f8b87e3efec368dbc276d8fcc6') in 0.040665 seconds 
+  Import took 0.045533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_contour_outside.mat
+  artifactKey: Guid(b9d26bddae554184da100f7ca3ece31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_contour_outside.mat using Guid(b9d26bddae554184da100f7ca3ece31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc4435011be129ae976d67ad0fda3a3') in 0.066977 seconds 
+  Import took 0.083487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_frame_outside.mat
+  artifactKey: Guid(0b15adcef404edc4183ef214e0d19ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_frame_outside.mat using Guid(0b15adcef404edc4183ef214e0d19ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de14c87b60a9d777abc0cec0b241a4e2') in 0.037264 seconds 
+  Import took 0.045539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_frame_inside_over.mat
+  artifactKey: Guid(d7a2e3ae2278e88438dab3f48141af31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_frame_inside_over.mat using Guid(d7a2e3ae2278e88438dab3f48141af31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6323def635afb9473a92d1becb92ea6') in 0.034462 seconds 
+  Import took 0.052389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_frame_inside_under.mat
+  artifactKey: Guid(f35e06e08bd25c243928db7007d12956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Gradient/Gradient_frame_inside_under.mat using Guid(f35e06e08bd25c243928db7007d12956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05777364ec184ce2097e398f8084d9a2') in 0.038615 seconds 
+  Import took 0.045175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/SpriteOutline/Demo/Materials/Image/Image_contour_outside.mat
+  artifactKey: Guid(1536d60d51475f34b82d8112ea67bb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteOutline/Demo/Materials/Image/Image_contour_outside.mat using Guid(1536d60d51475f34b82d8112ea67bb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fbb1fff204321c7fef365f950e1520d') in 0.037408 seconds 
+  Import took 0.042827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 100.340872 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal
+  artifactKey: Guid(6474a1ac83b821b44a5e1fa772d98847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal using Guid(6474a1ac83b821b44a5e1fa772d98847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585010ba2cf14eabf4fa9565c3f7a735') in 0.016731 seconds 
+  Import took 0.121355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.478243 seconds.
+  path: Assets/Potions/Buff/Healing/% Heal
+  artifactKey: Guid(dae59d7976803d14a9fe6be0d5d40ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/% Heal using Guid(dae59d7976803d14a9fe6be0d5d40ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733faff474f02cacf57bb27bfb5ba365') in 0.014635 seconds 
+  Import took 0.035187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.739964 seconds.
+  path: Assets/Potions/Buff/Healing/MaxHP Up
+  artifactKey: Guid(60b6f009ff5496d42a1e43aaca4264a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/MaxHP Up using Guid(60b6f009ff5496d42a1e43aaca4264a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da38117c971ff85cdcc00ed2406665f3') in 0.015153 seconds 
+  Import took 0.042074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.057650 seconds.
+  path: Assets/Potions/Buff/Speed/new Recipe.asset
+  artifactKey: Guid(99fe9baa84ec0d34199dcf4213766715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/new Recipe.asset using Guid(99fe9baa84ec0d34199dcf4213766715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154c6050daf2fd31de387744e7031948') in 0.017956 seconds 
+  Import took 0.032844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.077241 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk
+  artifactKey: Guid(dacf124eb44d5604a8718ae344883845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk using Guid(dacf124eb44d5604a8718ae344883845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ef091b2b91a3599108a04ea1592e7b') in 0.016370 seconds 
+  Import took 0.120896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.073074 seconds.
+  path: Assets/Potions/Buff/Speed/Spd Bonus
+  artifactKey: Guid(c25a96e7199cf2b4984648f8bfe0bac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Spd Bonus using Guid(c25a96e7199cf2b4984648f8bfe0bac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53057a6168ac122d6851449b59a47f3c') in 0.009544 seconds 
+  Import took 0.019115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.345142 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Fogo & Planta.asset
+  artifactKey: Guid(d3e35e3173808d34f8f05f63899d6f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Fogo & Planta.asset using Guid(d3e35e3173808d34f8f05f63899d6f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636cd7ebc2dadbb3ccccf0f389a20e5e') in 0.013872 seconds 
+  Import took 0.133525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.963418 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Fogo e Planta.asset
+  artifactKey: Guid(d3e35e3173808d34f8f05f63899d6f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Fogo e Planta.asset using Guid(d3e35e3173808d34f8f05f63899d6f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5457f64fa4733c172e9e87397bac06') in 0.013755 seconds 
+  Import took 0.029928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 187.695126 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Atk % Up.asset
+  artifactKey: Guid(744ea7c7a25af234eb3f624b2c1011c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Atk % Up.asset using Guid(744ea7c7a25af234eb3f624b2c1011c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7f48cf859925448363b9e342c029bd') in 0.016439 seconds 
+  Import took 0.025019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.603820 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage/Fogo e Raio.asset
+  artifactKey: Guid(ce268a0109d9e0d4d9d4016daf178665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage/Fogo e Raio.asset using Guid(ce268a0109d9e0d4d9d4016daf178665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd9729b631ef4e0b010e47cfedeee14') in 0.024553 seconds 
+  Import took 0.035614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.036884 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage/Fogo e Raio Bom.asset
+  artifactKey: Guid(ce268a0109d9e0d4d9d4016daf178665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage/Fogo e Raio Bom.asset using Guid(ce268a0109d9e0d4d9d4016daf178665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed098a697db67235dee48ba7d7aa30f') in 0.014920 seconds 
+  Import took 0.023679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.070140 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Fogo e Planta Bom.asset
+  artifactKey: Guid(d3e35e3173808d34f8f05f63899d6f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Fogo e Planta Bom.asset using Guid(d3e35e3173808d34f8f05f63899d6f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7db764e8f2713a9366048f1d9c932d') in 0.015183 seconds 
+  Import took 0.021195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.190724 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage/Crit Dmg Uo.asset
+  artifactKey: Guid(c16cf1f9749575044a065b4f19a7062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage/Crit Dmg Uo.asset using Guid(c16cf1f9749575044a065b4f19a7062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd501a699d94a7efeeaf93322f5d7d6') in 0.012898 seconds 
+  Import took 0.018564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.298079 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage/Crit Dmg Up POT.asset
+  artifactKey: Guid(c16cf1f9749575044a065b4f19a7062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage/Crit Dmg Up POT.asset using Guid(c16cf1f9749575044a065b4f19a7062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09daec8def4a4a940ba76942aaf8b831') in 0.018739 seconds 
+  Import took 0.027498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.361907 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Atk % Up POT.asset
+  artifactKey: Guid(744ea7c7a25af234eb3f624b2c1011c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Atk % Up POT.asset using Guid(744ea7c7a25af234eb3f624b2c1011c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc09e386cd6e87e52d74eccdf2713fba') in 0.098183 seconds 
+  Import took 0.104137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.579761 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Rate/Fogo e Fogo Bom.asset
+  artifactKey: Guid(464cc5181022ac746b0d352fc6fcd870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Rate/Fogo e Fogo Bom.asset using Guid(464cc5181022ac746b0d352fc6fcd870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a346d9850c6343276ea1631718167f8a') in 0.012557 seconds 
+  Import took 0.018096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.893934 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Rate/Crit Rate Up.asset
+  artifactKey: Guid(faaf56dde54e3ed4e8a2511c2aec93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Rate/Crit Rate Up.asset using Guid(faaf56dde54e3ed4e8a2511c2aec93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89937b3a37f6cbaf24789374220ff6b3') in 0.010305 seconds 
+  Import took 0.032266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.175382 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Planta Bom.asset
+  artifactKey: Guid(9c59023165c88f645af6fba4ad70acc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Planta Bom.asset using Guid(9c59023165c88f645af6fba4ad70acc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2243f382f4cf7e0d0ce139cea89185a0') in 0.008315 seconds 
+  Import took 0.024305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.436180 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Flat Dmg Up.asset
+  artifactKey: Guid(3af1964c6456871489b451211701520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Flat Dmg Up.asset using Guid(3af1964c6456871489b451211701520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf54c589bc2c9116d6c6438724f169f') in 0.011576 seconds 
+  Import took 0.019213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.328185 seconds.
+  path: Assets/Potions/Buff/Defense/Evade/Agua e Agua Bom.asset
+  artifactKey: Guid(73e804e7dfab85848bedf61673114266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade/Agua e Agua Bom.asset using Guid(73e804e7dfab85848bedf61673114266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa6e7cbae24e4103c7f9525cf962766') in 0.013375 seconds 
+  Import took 0.125104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.886741 seconds.
+  path: Assets/Potions/Buff/Defense/Evade/Evade Up.asset
+  artifactKey: Guid(5f94a95f4b9e68d46aadfffa5c341101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade/Evade Up.asset using Guid(5f94a95f4b9e68d46aadfffa5c341101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '254b73eee21f1e063232403f5003f636') in 0.010438 seconds 
+  Import took 0.017427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.368310 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Terra e Terra Bom.asset
+  artifactKey: Guid(c31631bc01980af4488826a875515291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Terra e Terra Bom.asset using Guid(c31631bc01980af4488826a875515291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01f60207e91d30bb530cf031df8aeaa') in 0.022533 seconds 
+  Import took 0.028301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.143425 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Def Up.asset
+  artifactKey: Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Def Up.asset using Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14eee5c5039cdd22098a5489232eb44') in 0.013043 seconds 
+  Import took 0.019328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.601353 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Flat Def Up.asset
+  artifactKey: Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Flat Def Up.asset using Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5804f8ea36b28214d742826061276437') in 0.013763 seconds 
+  Import took 0.022834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.901435 seconds.
+  path: Assets/Potions/Buff/Defense/Evade/Evade Flat Up.asset
+  artifactKey: Guid(5f94a95f4b9e68d46aadfffa5c341101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade/Evade Flat Up.asset using Guid(5f94a95f4b9e68d46aadfffa5c341101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d78fd4704bf116517027b1d388d0d9') in 0.014609 seconds 
+  Import took 0.020014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.902575 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Def Flat Up.asset
+  artifactKey: Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Def Flat Up.asset using Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dfd27ddd8392f975eb835d0ab303898') in 0.014786 seconds 
+  Import took 0.024944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.167769 seconds.
+  path: Assets/Potions/Buff/Healing/% Heal/Planta e Planta Bom.asset
+  artifactKey: Guid(268ce3022d60ac748a0b207a5ad25e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/% Heal/Planta e Planta Bom.asset using Guid(268ce3022d60ac748a0b207a5ad25e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75e05a2f4ec5ac5dc36ad8f74aad324') in 0.018226 seconds 
+  Import took 0.024374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.270954 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal/Planta e Raio Bom.asset
+  artifactKey: Guid(70dcdd55480ab714995aceeb4ae2739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal/Planta e Raio Bom.asset using Guid(70dcdd55480ab714995aceeb4ae2739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610a5c680e732c2cb1722474d55a06df') in 0.021083 seconds 
+  Import took 0.057930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.362514 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal/Heal Flat.asset
+  artifactKey: Guid(c28812e8df995c749b41cfe1c61d2d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal/Heal Flat.asset using Guid(c28812e8df995c749b41cfe1c61d2d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50856867e18107b9479cb2a5200e3864') in 0.013763 seconds 
+  Import took 0.020844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.633007 seconds.
+  path: Assets/Potions/Buff/Healing/MaxHP Up/Terra e Planta Bom.asset
+  artifactKey: Guid(57cb2dedf33bb324d9f4ec33970e70e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/MaxHP Up/Terra e Planta Bom.asset using Guid(57cb2dedf33bb324d9f4ec33970e70e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86372b2dc6bc54c5e1484345ffc1b61') in 0.019553 seconds 
+  Import took 0.037068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.356101 seconds.
+  path: Assets/Potions/Buff/Healing/MaxHP Up/MaxHP Flat Up.asset
+  artifactKey: Guid(f4fa8594495ed284296b46bfb550aa7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/MaxHP Up/MaxHP Flat Up.asset using Guid(f4fa8594495ed284296b46bfb550aa7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2efdf4fe41ea988d681f7c30dd1741') in 0.013493 seconds 
+  Import took 0.020535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.888722 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk/Ar e Ar Bom.asset
+  artifactKey: Guid(5a672dca3d81a064f9c4dede93242f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk/Ar e Ar Bom.asset using Guid(5a672dca3d81a064f9c4dede93242f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b196ee75f55e006070e35d58d4b7a8') in 0.012275 seconds 
+  Import took 0.026363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.139902 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk/Raio e Raio.asset
+  artifactKey: Guid(0a5d1e9ab216f52439a34f081d0af435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk/Raio e Raio.asset using Guid(0a5d1e9ab216f52439a34f081d0af435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1609407b81ce0e6ee95c1d41059bb6df') in 0.012616 seconds 
+  Import took 0.034389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.248426 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk/Double Atk.asset
+  artifactKey: Guid(43eaf774e30b6444192a933db74642ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk/Double Atk.asset using Guid(43eaf774e30b6444192a933db74642ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9aefade6fa0a09f34f726131e6f6493') in 0.006076 seconds 
+  Import took 0.014360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.281132 seconds.
+  path: Assets/Potions/Buff/Speed/Spd Bonus/Ar e Raio Bom.asset
+  artifactKey: Guid(3bbbf034c17a43d47aa52adf3c81d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Spd Bonus/Ar e Raio Bom.asset using Guid(3bbbf034c17a43d47aa52adf3c81d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd14e497d4cf6dfb4afd21a1ca454095') in 0.010814 seconds 
+  Import took 0.019292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.649142 seconds.
+  path: Assets/Potions/Buff/Speed/Spd Bonus/Spd Flat Bonus.asset
+  artifactKey: Guid(53e71693c79f4424fb111b4d312472e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Spd Bonus/Spd Flat Bonus.asset using Guid(53e71693c79f4424fb111b4d312472e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e95dd9f8c611e3e16a5225cd4b12f2') in 0.010911 seconds 
+  Import took 0.016769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.236076 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Atk % Up.prefab
+  artifactKey: Guid(ec699d45d9a13ce4393a611a3f487c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Atk % Up.prefab using Guid(ec699d45d9a13ce4393a611a3f487c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd20ccb08729c74a178f46b741df96ad') in 0.040205 seconds 
+  Import took 0.045594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.679708 seconds.
+  path: Assets/Potions/Buff/Healing/% Heal/Heal %.asset
+  artifactKey: Guid(7f63ada2958a799439e2637be3180854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/% Heal/Heal %.asset using Guid(7f63ada2958a799439e2637be3180854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f4f3caa7893a0dd555c3fe8bfe80e9') in 0.024432 seconds 
+  Import took 0.032648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.880985 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal/Heal Flat.asset
+  artifactKey: Guid(c28812e8df995c749b41cfe1c61d2d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal/Heal Flat.asset using Guid(c28812e8df995c749b41cfe1c61d2d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2025b739070d3108f97e789b145d185') in 0.013211 seconds 
+  Import took 0.020715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal/Planta e Raio Bom.asset
+  artifactKey: Guid(70dcdd55480ab714995aceeb4ae2739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal/Planta e Raio Bom.asset using Guid(70dcdd55480ab714995aceeb4ae2739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54fbc5fc98fc41253c1c747f3715d92c') in 0.006587 seconds 
+  Import took 0.015014 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007193 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.177 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3178ms)
+		BeginReloadAssembly (589ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (2222ms)
+			LoadAssemblies (612ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1104ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (109ms)
+			SetupLoadedEditorAssemblies (506ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2799.
+Total: 5.529700 ms (FindLiveObjects: 0.350300 ms CreateObjectMapping: 0.228600 ms MarkObjects: 4.913700 ms  DeleteObjects: 0.035000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 148.161189 seconds.
+  path: Assets/Potions/Buff/Healing/MaxHP Up/MaxHP Flat Up.asset
+  artifactKey: Guid(f4fa8594495ed284296b46bfb550aa7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/MaxHP Up/MaxHP Flat Up.asset using Guid(f4fa8594495ed284296b46bfb550aa7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5e33022f0420fd166c1588e6ed25f2') in 0.021513 seconds 
+  Import took 0.028981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Potions/Buff/Healing/MaxHP Up/Terra e Planta Bom.asset
+  artifactKey: Guid(57cb2dedf33bb324d9f4ec33970e70e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/MaxHP Up/Terra e Planta Bom.asset using Guid(57cb2dedf33bb324d9f4ec33970e70e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1479a1e5bfeffabc3aed907c7f5fe212') in 0.012803 seconds 
+  Import took 0.021949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.832983 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Def Flat Up.asset
+  artifactKey: Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Def Flat Up.asset using Guid(d8e46ebf96166b343be570f22a6a879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f27447546b06bcd6ee4b4d5e041bf80') in 0.006968 seconds 
+  Import took 0.014143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Terra e Terra Bom.asset
+  artifactKey: Guid(c31631bc01980af4488826a875515291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Terra e Terra Bom.asset using Guid(c31631bc01980af4488826a875515291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6826f64a0672494c9e164f9d7739861d') in 0.006981 seconds 
+  Import took 0.013388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.757225 seconds.
+  path: Assets/Potions/Buff/Speed/Spd Bonus/Ar e Raio Bom.asset
+  artifactKey: Guid(3bbbf034c17a43d47aa52adf3c81d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Spd Bonus/Ar e Raio Bom.asset using Guid(3bbbf034c17a43d47aa52adf3c81d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4752aaae7af09ccd0a3b5833579184c6') in 0.007853 seconds 
+  Import took 0.019684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Potions/Buff/Speed/Spd Bonus/Spd Flat Bonus.asset
+  artifactKey: Guid(53e71693c79f4424fb111b4d312472e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Spd Bonus/Spd Flat Bonus.asset using Guid(53e71693c79f4424fb111b4d312472e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60324d29c9dd24b543cd9d977de1e457') in 0.012894 seconds 
+  Import took 0.019264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.461128 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk/Ar e Ar Bom.asset
+  artifactKey: Guid(5a672dca3d81a064f9c4dede93242f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk/Ar e Ar Bom.asset using Guid(5a672dca3d81a064f9c4dede93242f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a29b45757e6825d457af8ada206f9c8') in 0.007037 seconds 
+  Import took 0.014073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001058 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk/Raio e Raio.asset
+  artifactKey: Guid(0a5d1e9ab216f52439a34f081d0af435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk/Raio e Raio.asset using Guid(0a5d1e9ab216f52439a34f081d0af435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b17fb63bcd6dfed300d4e514f56b61') in 0.014369 seconds 
+  Import took 0.022098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Potions/Buff/Speed/Double Atk/Double Atk.asset
+  artifactKey: Guid(43eaf774e30b6444192a933db74642ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Speed/Double Atk/Double Atk.asset using Guid(43eaf774e30b6444192a933db74642ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1eb69caead70e04babea6d977e4e47') in 0.013542 seconds 
+  Import took 0.021909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.118378 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage/Crit Dmg Up POT.asset
+  artifactKey: Guid(c16cf1f9749575044a065b4f19a7062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage/Crit Dmg Up POT.asset using Guid(c16cf1f9749575044a065b4f19a7062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1206782593ec14540b12aef629a090dd') in 0.048406 seconds 
+  Import took 0.053785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Damage/Fogo e Raio Bom.asset
+  artifactKey: Guid(ce268a0109d9e0d4d9d4016daf178665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Damage/Fogo e Raio Bom.asset using Guid(ce268a0109d9e0d4d9d4016daf178665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1abdf08973987aae30834101ad11591') in 0.006845 seconds 
+  Import took 0.013320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.000414 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Flat Dmg Up.asset
+  artifactKey: Guid(3af1964c6456871489b451211701520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Flat Dmg Up.asset using Guid(3af1964c6456871489b451211701520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763e61e55530dee79659c98112779743') in 0.005807 seconds 
+  Import took 0.038912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Planta Bom.asset
+  artifactKey: Guid(9c59023165c88f645af6fba4ad70acc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Planta Bom.asset using Guid(9c59023165c88f645af6fba4ad70acc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8660212ad945821b5090dd4b2f9c0cc4') in 0.011862 seconds 
+  Import took 0.016854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.058657 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Rate/Crit Rate Up.asset
+  artifactKey: Guid(faaf56dde54e3ed4e8a2511c2aec93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Rate/Crit Rate Up.asset using Guid(faaf56dde54e3ed4e8a2511c2aec93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03aed21e829cc12820977f0f52ffb773') in 0.005278 seconds 
+  Import took 0.011119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.821631 seconds.
+  path: Assets/Potions/Buff/Defense/Evade/Agua e Agua Bom.asset
+  artifactKey: Guid(73e804e7dfab85848bedf61673114266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade/Agua e Agua Bom.asset using Guid(73e804e7dfab85848bedf61673114266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b01b483edc71ea3219d1ea8183918c') in 0.007378 seconds 
+  Import took 0.032276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 247.919855 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal/Planta e Ar Bom.asset
+  artifactKey: Guid(abed7647c746c854c96f6368c0c52593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal/Planta e Ar Bom.asset using Guid(abed7647c746c854c96f6368c0c52593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431a9f710112388a7b5ed9c4d77c73ca') in 0.019511 seconds 
+  Import took 0.025687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.065555 seconds.
+  path: Assets/Potions/Buff/Healing/Flat Heal/Planta e Agua Bom.asset
+  artifactKey: Guid(cc4d1461a751dd64e8736fe1d1f393fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Healing/Flat Heal/Planta e Agua Bom.asset using Guid(cc4d1461a751dd64e8736fe1d1f393fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80ab48cdaec9818e85ffe8630849f39') in 0.011902 seconds 
+  Import took 0.017680 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006086 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.535 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1537ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1243ms)
+			LoadAssemblies (189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (415ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (306ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2802.
+Total: 4.183600 ms (FindLiveObjects: 0.278800 ms CreateObjectMapping: 0.137000 ms MarkObjects: 3.741600 ms  DeleteObjects: 0.024600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 279.497619 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Ar e Fogo Bom.asset
+  artifactKey: Guid(23f414b3aa7fd4f43a3a071932d4dadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Ar e Fogo Bom.asset using Guid(23f414b3aa7fd4f43a3a071932d4dadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f994c62ada24352b1c0bc7b03afcb2') in 0.037829 seconds 
+  Import took 0.047292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.390643 seconds.
+  path: Assets/Potions/Buff/Defense/Evade/Ar e Agua Bom.asset
+  artifactKey: Guid(fb15450d7ad706846b7985e1a1dfd308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Evade/Ar e Agua Bom.asset using Guid(fb15450d7ad706846b7985e1a1dfd308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10932916ba84559b003679775096caff') in 0.021828 seconds 
+  Import took 0.035840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.852761 seconds.
+  path: Assets/Potions/Buff/Defense/Flat Def/Ar e Terra Bom.asset
+  artifactKey: Guid(a39fa80713d73b04aadde378c9dfea33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Flat Def/Ar e Terra Bom.asset using Guid(a39fa80713d73b04aadde378c9dfea33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79db074a39bcdda2ca5199815641baab') in 0.017444 seconds 
+  Import took 0.022587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.465978 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Agua.asset
+  artifactKey: Guid(2191025832874554980d23a95ff8d7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Agua.asset using Guid(2191025832874554980d23a95ff8d7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4cff2234b59403bd794e6212fb74d7') in 0.013038 seconds 
+  Import took 0.031702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.755637 seconds.
+  path: Assets/Potions/Buff/Defense/Def %
+  artifactKey: Guid(2fdefee2ef33a1a4195bd7acc3d564d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Def % using Guid(2fdefee2ef33a1a4195bd7acc3d564d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb606476774c3c26f32d22cdfad2c163') in 0.011983 seconds 
+  Import took 0.019087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.931381 seconds.
+  path: Assets/Potions/Buff/Defense/Def Flat
+  artifactKey: Guid(3eccc29d96545eb4597cddaaaffe325f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Def Flat using Guid(3eccc29d96545eb4597cddaaaffe325f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb2cdd425b8ef1048a9c319351ad152') in 0.012653 seconds 
+  Import took 0.018011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.800208 seconds.
+  path: Assets/Potions/Buff/Defense/Def %/Fogo e Agua Bom.asset
+  artifactKey: Guid(918e6d663743ff9458c4d336a6b11fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Def %/Fogo e Agua Bom.asset using Guid(918e6d663743ff9458c4d336a6b11fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc00947199fc6598bd4fbe47a0aa8910') in 0.014548 seconds 
+  Import took 0.049263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.261808 seconds.
+  path: Assets/Potions/Buff/Defense/Def %/Def % Up.asset
+  artifactKey: Guid(599ce2e4e84f34b40b5f5b9551dff952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Def %/Def % Up.asset using Guid(599ce2e4e84f34b40b5f5b9551dff952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53135f20ff231bceff742fc32833f528') in 0.013629 seconds 
+  Import took 0.019165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.821079 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Terra Bom.asset
+  artifactKey: Guid(eb2cccf1b49f4a34aa865ec35c65ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Terra Bom.asset using Guid(eb2cccf1b49f4a34aa865ec35c65ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4120b284baab342b578d7363515551df') in 0.017417 seconds 
+  Import took 0.036348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.682231 seconds.
+  path: Assets/Potions/Buff/Defense/Def Flat/Agua e Terra Bom.asset
+  artifactKey: Guid(9733c07658fd14d449216d966b987323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Defense/Def Flat/Agua e Terra Bom.asset using Guid(9733c07658fd14d449216d966b987323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf9fa3532a9e0883b8c53df665064ee') in 0.035918 seconds 
+  Import took 0.050469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1118.597140 seconds.
+  path: Assets/Potions/Debuff/Dmg %
+  artifactKey: Guid(6144bb775cfac1b46858ff97c75f6ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Dmg % using Guid(6144bb775cfac1b46858ff97c75f6ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ce8aea0dafc54ccc8ad3a783a4f41f') in 0.013859 seconds 
+  Import took 0.022602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.329163 seconds.
+  path: Assets/Potions/Debuff/Damage
+  artifactKey: Guid(f417ebea4600d47409365294b679b5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage using Guid(f417ebea4600d47409365294b679b5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a1dc20bfe26964a8fbb8c819d73ff80') in 0.004176 seconds 
+  Import took 0.024970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.206545 seconds.
+  path: Assets/Potions/Debuff/Damage Flat
+  artifactKey: Guid(d8584edc35cbbbf498eae7f91949872c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage Flat using Guid(d8584edc35cbbbf498eae7f91949872c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a36ea5aef57ddac3ec9c67ef94fdc3') in 0.011952 seconds 
+  Import took 0.021114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.063960 seconds.
+  path: Assets/Potions/Debuff/Stun
+  artifactKey: Guid(dbf7464398717f34eb9c6cdb910a69f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Stun using Guid(dbf7464398717f34eb9c6cdb910a69f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5cdf8f38edc0fb465e9d6fc2b23c2a0') in 0.014196 seconds 
+  Import took 0.020986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.273441 seconds.
+  path: Assets/Potions/Debuff/Damage/Dmg %/Planta e Planta Ruim.asset
+  artifactKey: Guid(4e59b05613aa74d43b1aef67c52ec89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Dmg %/Planta e Planta Ruim.asset using Guid(4e59b05613aa74d43b1aef67c52ec89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee97cc7507958daa6988ee6ba47613f9') in 0.013349 seconds 
+  Import took 0.019881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.989751 seconds.
+  path: Assets/Potions/Debuff/Damage/Dmg %/Fogo e Fogo Ruim.asset
+  artifactKey: Guid(971fd83aad154b54087d1c8c74f39537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Dmg %/Fogo e Fogo Ruim.asset using Guid(971fd83aad154b54087d1c8c74f39537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957dbe15db9daac652d282b05efc4614') in 0.012396 seconds 
+  Import took 0.019849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.737282 seconds.
+  path: Assets/Potions/Ingredient/Bom
+  artifactKey: Guid(a7d7633ce324e80408e0dbd91c9b04e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Ingredient/Bom using Guid(a7d7633ce324e80408e0dbd91c9b04e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47795e73248af31fdf93b53192252ece') in 0.014350 seconds 
+  Import took 0.020702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.249151 seconds.
+  path: Assets/Potions/Debuff/Damage/Dmg %/Agua e Agua Ruim.asset
+  artifactKey: Guid(2bec6e03f1250d043958cf6a35155e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Dmg %/Agua e Agua Ruim.asset using Guid(2bec6e03f1250d043958cf6a35155e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a16c550939647eced55660097fe0fba') in 0.012103 seconds 
+  Import took 0.021807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.577925 seconds.
+  path: Assets/Potions/Debuff/Damage/Dmg %/Damage % Delt.asset
+  artifactKey: Guid(a83acd03cf8e7724aa70aede45af2bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Dmg %/Damage % Delt.asset using Guid(a83acd03cf8e7724aa70aede45af2bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f52426cff6f55d793fa227f4f23839b') in 0.011997 seconds 
+  Import took 0.021138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.760312 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/new Recipe.asset
+  artifactKey: Guid(5cd143ccd6c2b8e46a09a2c3bc0ea55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/new Recipe.asset using Guid(5cd143ccd6c2b8e46a09a2c3bc0ea55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee53933b1411f9e6299f380ded8f8ccc') in 0.009459 seconds 
+  Import took 0.027536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.900258 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Planta e Ar Ruim.asset
+  artifactKey: Guid(6c0bb038bea193d4aaa3488a4d83fc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Planta e Ar Ruim.asset using Guid(6c0bb038bea193d4aaa3488a4d83fc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4d7745b43bd345d2c6d2c53d6b3164') in 0.014495 seconds 
+  Import took 0.023769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.006841 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Planta e Fogo Ruim.asset
+  artifactKey: Guid(8dfbb73d1d781224681dcdc430598bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Planta e Fogo Ruim.asset using Guid(8dfbb73d1d781224681dcdc430598bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558ee2751b95e3aa2bf1a830bd006c5a') in 0.012852 seconds 
+  Import took 0.021010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.315573 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Planta e Agua Ruim.asset
+  artifactKey: Guid(c1da603bac9e28846930d82d1d08b88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Planta e Agua Ruim.asset using Guid(c1da603bac9e28846930d82d1d08b88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd635f6592cc8a5c5d8dddb595f19c5bc') in 0.012754 seconds 
+  Import took 0.020189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.114908 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Planta e Pedra Ruim.asset
+  artifactKey: Guid(ea3d9039543b2c048bcbadd505a61350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Planta e Pedra Ruim.asset using Guid(ea3d9039543b2c048bcbadd505a61350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cebbd3c6fae533c6fc59257fee9645') in 0.016398 seconds 
+  Import took 0.022591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.845412 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Planta e Raio Ruim.asset
+  artifactKey: Guid(520a52eaa6063db439cf3dda7dc8d472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Planta e Raio Ruim.asset using Guid(520a52eaa6063db439cf3dda7dc8d472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f244883581662a2a8e0744639a9464be') in 0.013179 seconds 
+  Import took 0.019939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.169618 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Ar e Fogo Ruim.asset
+  artifactKey: Guid(c7349da65d252284e827a53fe7dee6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Ar e Fogo Ruim.asset using Guid(c7349da65d252284e827a53fe7dee6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2472ee247395633b945418bd3cedda') in 0.012455 seconds 
+  Import took 0.018893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.540448 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Ar e Agua Ruim.asset
+  artifactKey: Guid(2f5c51b691d285c44a9feac8f707059c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Ar e Agua Ruim.asset using Guid(2f5c51b691d285c44a9feac8f707059c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea18dc936b05538f18713b8142e70de7') in 0.024922 seconds 
+  Import took 0.044747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.100138 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Ar e Terra Ruim.asset
+  artifactKey: Guid(a858f3472f057bd4f8e9cbc354768935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Ar e Terra Ruim.asset using Guid(a858f3472f057bd4f8e9cbc354768935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6da6e783c43028900fc60c9a3e38981') in 0.017869 seconds 
+  Import took 0.029360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.755652 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Planta e Terra Ruim.asset
+  artifactKey: Guid(ea3d9039543b2c048bcbadd505a61350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Planta e Terra Ruim.asset using Guid(ea3d9039543b2c048bcbadd505a61350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d09ef12fb1bf54e021f515b21ee3c1') in 0.032700 seconds 
+  Import took 0.040718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.309980 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Ar e Raio Ruim.asset
+  artifactKey: Guid(7cdae5e3a3445754dab81cb71bf98df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Ar e Raio Ruim.asset using Guid(7cdae5e3a3445754dab81cb71bf98df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b5d5452f1b37a4cdf876d5fc04cf17') in 0.014435 seconds 
+  Import took 0.021348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.015560 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Fogo e Terra Ruim.asset
+  artifactKey: Guid(95cb1cf704228334bba760f505938c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Fogo e Terra Ruim.asset using Guid(95cb1cf704228334bba760f505938c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9235381569dcd512b2e2d492c6e5f49e') in 0.013781 seconds 
+  Import took 0.019522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.356531 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Fogo e Raio Ruim.asset
+  artifactKey: Guid(746928aa6a8de2845bb5570ae5208b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Fogo e Raio Ruim.asset using Guid(746928aa6a8de2845bb5570ae5208b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af337e14477c0ca5266d548b64985ab3') in 0.013674 seconds 
+  Import took 0.020304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.569182 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Agua e Terra Ruim.asset
+  artifactKey: Guid(50ccac1860805c5439e91074f2586b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Agua e Terra Ruim.asset using Guid(50ccac1860805c5439e91074f2586b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33c469ad66602ce8fd4f32543759657') in 0.013964 seconds 
+  Import took 0.040711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.025361 seconds.
+  path: Assets/Potions/Debuff/Damage/Damage Flat/Damage Flat Delt.asset
+  artifactKey: Guid(99db08503dccb9d49ab81450a3d2be2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Damage/Damage Flat/Damage Flat Delt.asset using Guid(99db08503dccb9d49ab81450a3d2be2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2b8b4df88dba3d04efa023ed5c45e9') in 0.015207 seconds 
+  Import took 0.022398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 89.206187 seconds.
+  path: Assets/Potions/Debuff/Stun/Ar e Ar Ruim.asset
+  artifactKey: Guid(64652e87f9cb1d848ab14b87f1d2064b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Stun/Ar e Ar Ruim.asset using Guid(64652e87f9cb1d848ab14b87f1d2064b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc32bf5042e639b8a1256fa0676a10e') in 0.016883 seconds 
+  Import took 0.128805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.763284 seconds.
+  path: Assets/Potions/Debuff/Stun/Terra e Terra Ruim.asset
+  artifactKey: Guid(4d158752ddeb600448a233f38895115b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Stun/Terra e Terra Ruim.asset using Guid(4d158752ddeb600448a233f38895115b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e2f2f015fa11ad11d52b46c645cdf1') in 0.022166 seconds 
+  Import took 0.039619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.348187 seconds.
+  path: Assets/Potions/Debuff/Stun/new Recipe.asset
+  artifactKey: Guid(d3c34beb7b34bc34aaa73fb6856ba90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Stun/new Recipe.asset using Guid(d3c34beb7b34bc34aaa73fb6856ba90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aeb133f014924a1c3442bec82fb3b4e') in 0.007888 seconds 
+  Import took 0.013200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.877359 seconds.
+  path: Assets/Potions/Debuff/Stun/Stun.asset
+  artifactKey: Guid(e4b6d648b444f824794ea163a1cce5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Debuff/Stun/Stun.asset using Guid(e4b6d648b444f824794ea163a1cce5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f48cf004e7f44e613cba63fc837f0b') in 0.006934 seconds 
+  Import took 0.012673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1107.500852 seconds.
+  path: Assets/Potions/Buff/Damage/% Bonus/Atk % Up 1.prefab
+  artifactKey: Guid(1e0b895b2b40aa94ebe0c87ba49df181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/% Bonus/Atk % Up 1.prefab using Guid(1e0b895b2b40aa94ebe0c87ba49df181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00775fc68aee0e4df7f4f77f70e99328') in 0.174458 seconds 
+  Import took 0.181590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 165.661018 seconds.
+  path: Assets/Potions/Buff/Damage/Crit Rate/Fogo e Fogo Bom.asset
+  artifactKey: Guid(464cc5181022ac746b0d352fc6fcd870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Crit Rate/Fogo e Fogo Bom.asset using Guid(464cc5181022ac746b0d352fc6fcd870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ce3e0cde26daf7e1de87a448a75a6b') in 0.009406 seconds 
+  Import took 0.016329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.352747 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Ar e Fogo Bom.asset
+  artifactKey: Guid(23f414b3aa7fd4f43a3a071932d4dadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Ar e Fogo Bom.asset using Guid(23f414b3aa7fd4f43a3a071932d4dadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bbf703ee62948a9825b22ac95dac429') in 0.009569 seconds 
+  Import took 0.016140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Terra Bom.asset
+  artifactKey: Guid(eb2cccf1b49f4a34aa865ec35c65ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Fogo e Terra Bom.asset using Guid(eb2cccf1b49f4a34aa865ec35c65ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c07d71cb8f8ecb2a9285e461142284') in 0.011176 seconds 
+  Import took 0.022574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Potions/Buff/Damage/Flat Bonus/Flat Dmg Up.asset
+  artifactKey: Guid(3af1964c6456871489b451211701520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Potions/Buff/Damage/Flat Bonus/Flat Dmg Up.asset using Guid(3af1964c6456871489b451211701520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133172d50cf52229718fa6a18a79bcc5') in 0.008762 seconds 
+  Import took 0.014010 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
