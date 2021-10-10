@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.Experimental.GraphView;
@@ -134,38 +133,6 @@ namespace ItemsSystem
         public virtual void UnSelect()
         {
             material.SetFloat("_OutlineEnabled", 0);
-        }
-    }
-
-    public abstract class Potion : Draggable
-    {
-        public delegate void ActivationEventHandler(Potion potion, Creature creature);
-
-        public event ActivationEventHandler ActivationEvent;
-
-        public string name;
-
-        protected abstract IEnumerable MainEffect(Creature creature);
-
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            var creature = other.gameObject.GetComponent<Creature>();
-            if (creature is null)
-            {
-                
-            }
-            else
-            {
-                ActivationEvent?.Invoke(this,creature);
-            }
-        }
-    }
-
-    public class Cauldron : MonoBehaviourSingleton<Cauldron>
-    {
-        public void Insert(Ingredientable ingredientable)
-        {
-            
         }
     }
 }
