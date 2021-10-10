@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6211b2e5d5646e68c3bd067129817f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 0f8bb9c98aa20f349b466f3d9fedcdb5, type: 2}
+  profile: {fileID: 11400000, guid: 84e8c7b7c2107a943960fbb34d9ca010, type: 2}
 --- !u!58 &10106022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrintTrace: 0
   PotionResults:
-  - {fileID: 11400000, guid: 744ea7c7a25af234eb3f624b2c1011c2, type: 2}
+  - {fileID: 11400000, guid: 7f63ada2958a799439e2637be3180854, type: 2}
   a1: {fileID: 11400000, guid: 224a6d14eaa09d049a30024625f39700, type: 2}
   a2: {fileID: 11400000, guid: 0f8bb9c98aa20f349b466f3d9fedcdb5, type: 2}
 --- !u!4 &561047824
@@ -1214,6 +1214,14 @@ MonoBehaviour:
   creatureMaxHealth: 0
   creatureMinHealth: 0
   creatureCurrentHealth: 0
+  transform: {fileID: 0}
+  defense: 0
+  stunChance: 0
+  precision: 0
+  evadePercent: 0
+  strength: 0
+  speed: 0
+  stunnedLastFrame: 0
 --- !u!1 &1920773878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6211b2e5d5646e68c3bd067129817f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 224a6d14eaa09d049a30024625f39700, type: 2}
+  profile: {fileID: 11400000, guid: 84e8c7b7c2107a943960fbb34d9ca010, type: 2}
 --- !u!50 &1920773880
 Rigidbody2D:
   serializedVersion: 4
