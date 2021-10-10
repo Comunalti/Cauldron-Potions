@@ -52,6 +52,10 @@ Precisão - Aumenta a chance de Crítico em 3%
 (Fogo+, Fogo+)
 Regeneração - Recupera 5% de vida durante 4
 (Água+, Planta+)
+Atacante - Aumenta o dano em 10 
+(Fogo+, Planta+)
+Atacador - Aumenta o dano em 10%
+(Raio+, Planta+)
 
 
 Explosão - Cause 20 de dano
