@@ -49,5 +49,20 @@ namespace CombatSystem
             yield return new WaitForSeconds(3f);
             Destroy(particleSystem);
         }
+
+        
+        public void AddCreatureToFight(Creature nextEnemy)
+        {
+            inGame.Add(nextEnemy);
+        }
+
+        public IEnumerator Fight()
+        {
+            yield return new WaitForSeconds(1);
+            if (inGame[0].speed>inGame[1].speed)
+            {
+                //inGame[0].;
+            }
+        }
     }
 }
