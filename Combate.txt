@@ -1,0 +1,67 @@
+Em turno, no protótipo ainda não haverá o sistema de velocidade, porém em outras versões já será possível.
+
+o combate ocorre em paralelo a criação de poções, e de forma idependente, o jogador apenas influenciará dando dano no inimigo, ou recuperando vida do herói. Mas cuidado para não acabar errando a poção e acertando o alvo errado.
+
+
+Atributos atuais:
+
+spd - Define quem ataca primeiro
+
+------- Player -------
+
+curHp = x + buffs
+maxHp = 100 + buffs
+spd = 5
+critRate = 5
+atkFailRate = 5
+evade = 5
+
+
+ataque = if(randint > (atkFailRate + enemy.Evade)){ Acerta o ataque, uau }
+
+baseAtk = 50
+damage = baseAtk + buffs
+
+------- Enemy -------
+
+curHp = x + buffs
+maxHp = 100 + (5 * poções feitas)
+spd = 4 + (1/5 * poções feitas)
+critRate = 5
+atkfailRate = 5
+evade = 5
+
+ataque = if(randint > (atkFailRate + player.evade)){ Acerta o ataque, uau }
+
+baseAtk = 10
+damage = baseAtk + (2 * poções feitas)
+
+------- Efeitos das Poções -------
+
+Cura - Aumenta a vida atual do boneco em 10%
+Resiliencia - Aumenta a vida máxima em 20
+Defesa da Terra - Reduz o dano tomado em 5
+Defesa da Água - Aumenta a taxa de evasão em 2%
+Velocidade - Aumenta a velocidade em 1
+Precisão - Aumenta a chance de Crítico em 3%
+Regeneração - Recupera 5% de vida durante 4
+
+
+Explosão - Cause 20 de dano
+Veneno - Cause 7 de dano durante 3 Turnos
+Podridão - Enoje o alvo, causando 10 de dano
+Descarga Elétrica - Cause 8 de dano, com 20% de chance de stun
+Pedrada - 25% de chance do alvo perder 3 turnos
+Lentidão - 75% de chance do alvo perder 1 turno, reduz em 1 a velocidade
+Convecção - 50% de chance um alvo leve para longe
+
+
+
+
+
+
+
+
+
+
+
