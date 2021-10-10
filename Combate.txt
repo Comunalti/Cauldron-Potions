@@ -74,6 +74,23 @@ Convecção - 50% de chance um alvo leve para longe
 (Ar-, Fogo-)
 
 
+Aumenta defesa em 10%
+Aumenta Ataque em 10%
+Recupera a vida em 10%
+
+Aumenta a chance de crit em 3%
+Aumenta o dano Crit em 10%
+Ataca 2 vezes
+
+Aumenta a Defesa em 8
+Aumenta o Ataque em 10
+Aumenta o 
+
+Recebe 10% da vida em dano
+Recebe 20 de dano
+5% de chance de Stun
+
+
 
 
 
