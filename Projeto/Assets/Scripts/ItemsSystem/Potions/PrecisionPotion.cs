@@ -6,12 +6,12 @@ namespace ItemsSystem.Potions
 {
     public class PrecisionPotion : Potion
     {
-        public float speed;
+        public float precisionChance;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
 
-            creature.AddPrecision(speed);
+            creature.AddPrecision(precisionChance);
             yield break;
         }
     }

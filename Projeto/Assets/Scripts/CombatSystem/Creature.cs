@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 
 namespace CombatSystem
@@ -11,9 +12,13 @@ namespace CombatSystem
         public float creatureMaxHealth = 0;
         public float creatureMinHealth = 0;
         public float creatureCurrentHealth = 0;
+        public new Transform transform;
         public float defense;
         public float stunChance;
-        public float 
+        public float precision;
+        public float evadePercent;
+        public float strength;
+        public float speed;
         public bool stunnedLastFrame;
 
         public delegate void HealthChangedEventHandler();
@@ -24,9 +29,34 @@ namespace CombatSystem
 
         private List<List<Action>> _queueActionList = new List<List<Action>>();
 
+        private void Start()
+        {
+            transform = GetComponent<Transform>();
+        }
+
+        private List<Action> GetLastList()
+        {
+            var first = _queueActionList.First();
+            _queueActionList.Remove(first);
+            return first;
+        }
+
+        private void AddElementAt(int index, Action element)
+        {
+            if (index>=_queueActionList.Count)
+            {
+                _queueActionList.Add(new List<Action>());
+                AddElementAt(index,element);
+            }
+            else
+            {
+                _queueActionList[index].Add(element);
+            }
+        }
+
         public IEnumerable StepActionQueue()
         {
-            var actionList = _queueActionList.First();
+            var actionList = GetLastList();
             foreach (var action in actionList)
             {
                 yield return new WaitForSeconds(1);
@@ -34,7 +64,33 @@ namespace CombatSystem
             }
             yield break;
         }
-        
+
+        public void StartMovement(Creature otherCreature)
+        {
+            var myTween = transform.DOMove(otherCreature.transform.position,animationDuration()).SetEase(Ease.InExpo).SetDelay(0.5f).SetLoops(2,LoopType.Yoyo);
+            myTween.OnStepComplete(
+                () =>
+                {
+                    Attack(otherCreature);
+                    myTween.SetEase(Ease.OutQuad).SetDelay(0f).OnComplete(()=>FinishMoveAttack(otherCreature));
+                });
+        }
+
+        private float animationDuration()
+        {
+            return 10 / speed;
+        }
+
+        private void FinishMoveAttack(Creature otherCreature)
+        {
+            otherCreature.StartMovement(this);
+        }
+
+        private void Attack(Creature otherCreature)
+        {
+            otherCreature.Damage(strength);
+        }
+
         public void Damage(float dmg)
         {
             creatureCurrentHealth -= dmg;
@@ -76,32 +132,40 @@ namespace CombatSystem
             this.stunChance = stunChance;
         }
 
-        public void QueueEffect(List<Action>  action)
+        public void QueueEffect(List<Action>  actions)
         {
-            for (int i = 0; i < action.Count; i++)
+            for (int i = 0; i < actions.Count; i++)
             {
-                
+                AddElementAt(i,actions[i]);
             }
         }
 
-        public void AddPrecision(float speed)
+        public void AddPrecision(float precisionChance)
         {
-            
+            precision += precisionChance;
         }
 
         public void RemoveSpeed(float speedReduction)
         {
-            throw new NotImplementedException();
+            speed =- speedReduction;
+            if (speed< 0)
+            {
+                speed = 0;
+            }
         }
 
         public void AddSpeed(float speed)
         {
-            throw new NotImplementedException();
+            this.speed += speed;
         }
 
         public void AddEvadeChange(float evadePercent)
         {
-            throw new NotImplementedException();
+            this.evadePercent += evadePercent;
+            if (evadePercent>=100f)
+            {
+                this.evadePercent = 100f;
+            }
         }
     }
 }
