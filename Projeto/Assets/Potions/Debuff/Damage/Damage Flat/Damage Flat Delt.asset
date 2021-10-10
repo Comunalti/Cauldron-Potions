@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654b11f0e0f77df4f936bfbc82cc921b, type: 3}
+  m_Name: Damage Flat Delt
+  m_EditorClassIdentifier: 
+  Recipes:
+  - {fileID: 11400000, guid: 50ccac1860805c5439e91074f2586b78, type: 2}
+  - {fileID: 11400000, guid: 2f5c51b691d285c44a9feac8f707059c, type: 2}
+  - {fileID: 11400000, guid: c7349da65d252284e827a53fe7dee6e1, type: 2}
+  - {fileID: 11400000, guid: 7cdae5e3a3445754dab81cb71bf98df2, type: 2}
+  - {fileID: 11400000, guid: a858f3472f057bd4f8e9cbc354768935, type: 2}
+  - {fileID: 11400000, guid: 746928aa6a8de2845bb5570ae5208b4d, type: 2}
+  - {fileID: 11400000, guid: 95cb1cf704228334bba760f505938c3a, type: 2}
+  - {fileID: 11400000, guid: c1da603bac9e28846930d82d1d08b88a, type: 2}
+  - {fileID: 11400000, guid: 6c0bb038bea193d4aaa3488a4d83fc10, type: 2}
+  - {fileID: 11400000, guid: 8dfbb73d1d781224681dcdc430598bf6, type: 2}
+  - {fileID: 11400000, guid: 520a52eaa6063db439cf3dda7dc8d472, type: 2}
+  - {fileID: 11400000, guid: ea3d9039543b2c048bcbadd505a61350, type: 2}
+  Prefab: {fileID: 0}

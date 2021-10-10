@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654b11f0e0f77df4f936bfbc82cc921b, type: 3}
+  m_Name: Damage % Delt
+  m_EditorClassIdentifier: 
+  Recipes:
+  - {fileID: 11400000, guid: 971fd83aad154b54087d1c8c74f39537, type: 2}
+  - {fileID: 11400000, guid: 4e59b05613aa74d43b1aef67c52ec89e, type: 2}
+  - {fileID: 11400000, guid: 2bec6e03f1250d043958cf6a35155e53, type: 2}
+  Prefab: {fileID: 0}
