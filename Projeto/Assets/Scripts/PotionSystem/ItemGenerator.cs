@@ -13,10 +13,9 @@ namespace PotionSystem
         public float GenerationDelayTime = 1;
 
         public Vector3 SpawnPostion;
-        public Vector3 FinalPosition;
         public void Start()
         {
-            
+           // StartCoroutine( GenerationRoute());
         }
 
         public IEnumerator GenerationRoute()
@@ -28,14 +27,16 @@ namespace PotionSystem
 
                 var randomItem = ingredientList.GetRandom();
 
-                Instantiate(randomItem, SpawnPostion, Extension.GetRandomXYQuaternion());
+                var clone = Instantiate(randomItem, SpawnPostion, Extension.GetRandomXYQuaternion());
 
-                //randomItem.transform.do
+                clone.AddComponent<ItemWaterMover>();
+
             }
             
             yield break;
         }
 
+        [ContextMenu("start loop")]
         public void CreateNewItem()
         {
             StartCoroutine(GenerationRoute());
