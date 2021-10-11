@@ -62,9 +62,13 @@ namespace ItemsSystem
             if (potionResult is null)
             {
                 FailParticleSystem.Play();
-                var quaternion = squashTransform.rotation;
-                squashTransform.DOShakeRotation(0.8f, 15);
-                squashTransform.rotation = quaternion ;
+                //var quaternion = squashTransform.rotation;
+                //squashTransform.DOShakeScale(0.8f, 0.5f);
+                //squashTransform.rotation = quaternion ;
+                
+                var a =squashTransform.DOScale(Vector3.one/2,0.5f).SetEase(Ease.InQuad).SetLoops(2,LoopType.Yoyo);//.OnComplete()
+                            a.OnStepComplete(() => { a.SetEase(Ease.InBounce); }).OnComplete(()=>squashTransform.localScale= Vector3.one);
+                
                 print("falhou");
                 Reset();
             }
@@ -84,11 +88,15 @@ namespace ItemsSystem
         public void ThrowItem(GameObject gameObject)
         {
             print("teaadasd");
-            var a = gameObject.GetComponent<Rigidbody2D>();
-            var scale = squashTransform.localScale;
-            squashTransform.DOShakeScale(0.8f, 0.5f);
-            squashTransform.localScale = scale;
-            a.AddForce(direction*force,ForceMode2D.Force);
+            var b = gameObject.GetComponent<Rigidbody2D>();
+            //var scale = squashTransform.localScale;
+            //squashTransform.DOShakeScale(0.8f, 0.5f);
+            //squashTransform.localScale = scale;
+            
+            var a =squashTransform.DOScale(Vector3.one/2,0.5f).SetEase(Ease.InQuad).SetLoops(2,LoopType.Yoyo);//.OnComplete()
+            a.OnStepComplete(() => { a.SetEase(Ease.InBounce); });
+            
+            b.AddForce(direction*force,ForceMode2D.Force);
         } 
         
         public void OnCollisionEnter2D(Collision2D other)
