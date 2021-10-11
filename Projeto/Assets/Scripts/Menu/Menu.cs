@@ -32,6 +32,7 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Scenes/Jogo");
         
     }
+
     public IEnumerator Quit()
     {
         yield return new WaitForSeconds(2);
