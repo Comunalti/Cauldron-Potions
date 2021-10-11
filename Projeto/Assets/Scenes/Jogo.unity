@@ -521,8 +521,16 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1803443699933017409, guid: 44483e08ddef07444be207a21a09a459, type: 3}
+      propertyPath: attackPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803443699933017409, guid: 44483e08ddef07444be207a21a09a459, type: 3}
       propertyPath: creatureMaxHealth
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803443699933017409, guid: 44483e08ddef07444be207a21a09a459, type: 3}
+      propertyPath: defensePosition.z
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1803443699933017409, guid: 44483e08ddef07444be207a21a09a459, type: 3}
       propertyPath: creatureCurrentHealth
@@ -546,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6397106339293319572, guid: 44483e08ddef07444be207a21a09a459, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6397106339293319572, guid: 44483e08ddef07444be207a21a09a459, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20261,8 +20269,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1394257874}
     - target: {fileID: 1672405392667649000, guid: bd798fd9da8eccd4290dcc3f2bd5e5f5, type: 3}
+      propertyPath: attackPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672405392667649000, guid: bd798fd9da8eccd4290dcc3f2bd5e5f5, type: 3}
       propertyPath: creatureMaxHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672405392667649000, guid: bd798fd9da8eccd4290dcc3f2bd5e5f5, type: 3}
+      propertyPath: defensePosition.z
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1672405392667649000, guid: bd798fd9da8eccd4290dcc3f2bd5e5f5, type: 3}
       propertyPath: creatureCurrentHealth
@@ -20286,7 +20302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1973475238210160989, guid: bd798fd9da8eccd4290dcc3f2bd5e5f5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1973475238210160989, guid: bd798fd9da8eccd4290dcc3f2bd5e5f5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30473,7 +30489,7 @@ MonoBehaviour:
   - {fileID: 6397106339293319569, guid: 44483e08ddef07444be207a21a09a459, type: 3}
   - {fileID: 7905938379111568523, guid: 63471d250f8118a46b921175f1ff5ebb, type: 3}
   - {fileID: 5844587984515805773, guid: ce442eaf030b076488759eafee96dfab, type: 3}
-  spawnPosition: {x: 1.12, y: 17.54, z: -5}
+  spawnPosition: {x: 1.12, y: 17.54, z: -4}
   stopPosition: {x: 0.86, y: 10.19, z: -5}
   walkDuration: 1.15
   barra: {fileID: 634278120}
