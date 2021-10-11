@@ -10,7 +10,7 @@ namespace ItemsSystem.Potions
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-            creature.addAttack(attackFlatBonus);
+            creature.AddAttack(attackFlatBonus);
             yield break;
         }
     }

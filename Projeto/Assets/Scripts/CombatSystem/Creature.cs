@@ -204,5 +204,10 @@ namespace CombatSystem
         {
             
         }
+
+        public void AddAttack(float attackFlatBonus)
+        {
+            currentAttack += attackFlatBonus;
+        }
     }
 }
