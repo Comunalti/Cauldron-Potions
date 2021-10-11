@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using PotionSystem;
 using Unity.Collections;
+using UnityEditor;
 using UnityEngine;
 
 namespace ItemsSystem
@@ -74,15 +75,20 @@ namespace ItemsSystem
 
         public void ThrowItem(GameObject gameObject)
         {
+            print("teaadasd");
             var a = gameObject.GetComponent<Rigidbody2D>();
-            a.AddForce(new Vector2(Random.Range(-1f,1f),1)*force,ForceMode2D.Force);
+            var direction = new Vector2(Random.Range(-1f, 1f), 1);
+            Debug.Log(direction);
+            a.AddForce(direction*force,ForceMode2D.Force);
         } 
         
         public void OnCollisionEnter2D(Collision2D other)
         {
             var a = other.gameObject.GetComponent<Ingredient>();
+            Debug.Log(a);
             if (a is null)
             {
+                Debug.Log("asdafhjsfdhjsdfhjhj");
                 ThrowItem(other.gameObject);
             }
             else
