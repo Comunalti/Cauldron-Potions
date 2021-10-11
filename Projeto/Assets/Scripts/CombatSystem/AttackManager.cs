@@ -10,6 +10,7 @@ namespace CombatSystem
 {
     public class AttackManager : MonoBehaviourSingleton<AttackManager>
     {
+<<<<<<< HEAD
         public Creature Enemy;
         public Creature Player;
 
@@ -134,6 +135,12 @@ namespace CombatSystem
         }
 
         private void MovePlayerBack()
+=======
+        public Creature targetCreature;
+        public Creature currentCreature;
+
+        public void OnEnable()
+>>>>>>> ea3f8b4a4b5b246b2ba26276e54eff8a8b8631fc
         {
             Player.transform.DOMove(Player.defensePosition, 1f).OnComplete(() => { PlayerFinishedMovingPart2 = true;});
         }
