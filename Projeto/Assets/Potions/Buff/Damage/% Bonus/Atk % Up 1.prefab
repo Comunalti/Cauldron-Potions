@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 94612302509189563}
   - component: {fileID: 6934077782485783658}
   - component: {fileID: 4442011101988322161}
+  - component: {fileID: -7428594090809998987}
   m_Layer: 0
   m_Name: Atk % Up 1
   m_TagString: Untagged
@@ -214,3 +215,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7428594090809998987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8654411264295629312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e79c3bf5106344490c1fef925f2782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionManager: {fileID: 0}
+  attackPercent: 0.1

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 99079289006210825}
   - component: {fileID: 8032418884254202792}
   - component: {fileID: 7709518717653476428}
-  - component: {fileID: 4331631184609688618}
+  - component: {fileID: -5190171772350791359}
   m_Layer: 0
   m_Name: Atk Flat
   m_TagString: Untagged
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4331631184609688618
+--- !u!114 &-5190171772350791359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,11 +142,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2590243250676490124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cecd82f8f9d848fea1c3f6f45f2155df, type: 3}
+  m_Script: {fileID: 11500000, guid: a6466e52dd1893344914e0eec5da127c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   potionManager: {fileID: 0}
-  defenseValue: 0
+  attackFlatBonus: 10
 --- !u!1 &7112930705453072911
 GameObject:
   m_ObjectHideFlags: 0
