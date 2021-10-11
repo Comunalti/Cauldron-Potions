@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace ItemsSystem.Potions
 {
-    public class CritRatePotion : Potion
+    public class CritDamagePotion : Potion
     {
-        public float critRateChange = 0.1f;
+        public float critDamage = 0.1f;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-            creature.AddCritRate(critRateChange);
+            creature.AddCritDamage(critDamage);
             yield break;
         }
     }
