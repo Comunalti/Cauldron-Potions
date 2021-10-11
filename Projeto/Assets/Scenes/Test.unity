@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cauldronItems: []
   spawnPosition: {x: 6, y: 0}
-  force: 0.33
+  force: 400
   makedPotions: 0
 --- !u!212 &1332792556
 SpriteRenderer:
@@ -2077,7 +2077,6 @@ MonoBehaviour:
   critChance: 0
   evadePercent: 0
   baseAttack: 0
-  strength: 0
   speed: 0
   stunnedLastFrame: 0
   attackPosition: {x: -8, y: -2, z: 0}
@@ -2262,17 +2261,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c15724bebce274e8876034f1c207e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatureMaxHealth: 0
+  creatureMaxHealth: 50
   creatureMinHealth: 0
-  creatureCurrentHealth: 0
-  transform: {fileID: 0}
-  animator: {fileID: 0}
-  defense: 0
+  creatureCurrentHealth: 50
+  transform: {fileID: 1889614102}
+  animator: {fileID: 1889614104}
+  defense: 5
   stunChance: 0
-  critChance: 0
-  evadePercent: 0
-  baseAttack: 0
-  strength: 0
+  critChance: 1
+  evadePercent: 1
+  baseAttack: 10
   speed: 0
   stunnedLastFrame: 0
   attackPosition: {x: -8, y: 0, z: 0}
