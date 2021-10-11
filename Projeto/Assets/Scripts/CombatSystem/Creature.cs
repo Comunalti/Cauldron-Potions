@@ -25,7 +25,6 @@ namespace CombatSystem
         private float critMultiplier;
 
         
-        public float strength;
         public float speed;
         public bool stunnedLastFrame;
 
@@ -75,33 +74,7 @@ namespace CombatSystem
             }
             yield break;
         }
-
-        public void StartMovement(Creature otherCreature)
-        {
-            var myTween = transform.DOMove(otherCreature.transform.position,animationDuration()).SetEase(Ease.InExpo).SetDelay(0.5f).SetLoops(2,LoopType.Yoyo);
-            myTween.OnStepComplete(
-                () =>
-                {
-                    Attack(otherCreature);
-                    myTween.SetEase(Ease.OutQuad).SetDelay(0f).OnComplete(()=>FinishMoveAttack(otherCreature));
-                });
-        }
-
-        private float animationDuration()
-        {
-            return 10 / speed;
-        }
-
-        private void FinishMoveAttack(Creature otherCreature)
-        {
-            otherCreature.StartMovement(this);
-        }
-
-        private void Attack(Creature otherCreature)
-        {
-            otherCreature.Damage(strength);
-        }
-
+        
         public void Damage(float dmg)
         {
             var hpToRemove = Mathf.Max((dmg - defense) * (Random.Range(0f,1f)<evadePercent?0f:1f),0) ;
@@ -208,6 +181,16 @@ namespace CombatSystem
         public void AddAttack(float attackFlatBonus)
         {
             currentAttack += attackFlatBonus;
+        }
+
+        public void AddCritDamage(float critDamagePotion)
+        {
+            critMultiplier += critDamagePotion;
+        }
+
+        public void AddCritRate(float critRateChange)
+        {
+            critChance += critRateChange;
         }
     }
 }

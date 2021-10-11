@@ -6,11 +6,11 @@ namespace ItemsSystem.Potions
 {
     public class CritDamagePotion : Potion
     {
-        public float CritDamagePotion = 10;
+        public float critDamage = 0.1f;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-            creature.AddCritDamage(CritDamagePotion);
+            creature.AddCritDamage(critDamage);
             yield break;
         }
     }
