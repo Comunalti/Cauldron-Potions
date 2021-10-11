@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using CombatSystem;
+using DG.Tweening;
 using PotionSystem;
 using UnityEngine;
 
@@ -28,6 +29,8 @@ namespace ItemsSystem
             {
                 ActivationEvent?.Invoke(this,creature);
                 StartCoroutine(MainEffect(creature));
+                GetComponent<Collider2D>().enabled = false;
+                GetComponent<Transform>().DOScale(Vector3.zero, 0.5f).OnComplete(() => { Destroy(gameObject); });
             }
         }
     }
