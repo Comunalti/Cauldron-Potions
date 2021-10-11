@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace CombatSystem
 { 
@@ -14,10 +15,16 @@ namespace CombatSystem
         public float creatureCurrentHealth = 0;
         public new Transform transform;
         public Animator animator;
+        
         public float defense;
         public float stunChance;
-        public float precision;
+        public float critChance;
         public float evadePercent;
+        private float currentAttack;
+        private float baseAttack;
+        private float critMultiplier;
+
+        
         public float strength;
         public float speed;
         public bool stunnedLastFrame;
@@ -29,6 +36,8 @@ namespace CombatSystem
         public event CreatureDiedEventHandler CreatureDiedEvent = () => {};
 
         private List<List<Action>> _queueActionList = new List<List<Action>>();
+        public Vector3 attackPosition;
+        public Vector3 defensePosition;
 
         private void Start()
         {
@@ -95,12 +104,8 @@ namespace CombatSystem
 
         public void Damage(float dmg)
         {
-            creatureCurrentHealth -= dmg;
-            if (creatureCurrentHealth<=creatureMinHealth)
-            {
-                Kill();
-            }
-            HealthChangedEvent.Invoke();
+            var hpToRemove = Mathf.Max((dmg - defense) * (Random.Range(0f,1f)<evadePercent?0f:1f),0) ;
+            RemoveHP(hpToRemove);
         }
 
         protected virtual void Kill()
@@ -144,7 +149,7 @@ namespace CombatSystem
 
         public void AddPrecision(float precisionChance)
         {
-            precision += precisionChance;
+            critChance += precisionChance;
         }
 
         public void RemoveSpeed(float speedReduction)
@@ -173,6 +178,31 @@ namespace CombatSystem
         public void DeathAnimation()
         {
             animator.Play("Death");
+        }
+        
+        public float AttackDmg()
+        {
+            return (baseAttack + currentAttack) + critMultiplier * ((Random.Range(0, 100) < critChance) ? 1f : 0f) * (baseAttack + currentAttack);
+        }
+
+        private void RemoveHP(float value)
+        {
+            creatureCurrentHealth -= value;
+            if (creatureCurrentHealth<=creatureMinHealth)
+            {
+                Kill();
+            }
+            HealthChangedEvent.Invoke();
+        }
+
+        public void UpdateAfterAttack()
+        {
+            
+        }
+
+        public void UpdateBeforeAttack()
+        {
+            
         }
     }
 }
