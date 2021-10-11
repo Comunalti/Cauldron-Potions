@@ -10,9 +10,129 @@ namespace CombatSystem
 {
     public class AttackManager : MonoBehaviourSingleton<AttackManager>
     {
+        public Creature Enemy;
+        public Creature Player;
+
+        private bool EnemyMoving;
+        private bool EnemyAttacking;
+        private bool EnemyReturning;
+        
+        private bool LastEnemyMoving;
+        private bool LastEnemyAttacking;
+        private bool LastEnemyReturning;
+        
+        
+        private bool PlayerMoving;
+        private bool PlayerAttacking;
+        private bool PlayerReturning;
+        
+        private bool LastPlayerMoving;
+        private bool LastPlayerAttacking;
+        private bool LastPlayerReturning;
+        
+        private bool InPlaceEnemy()
+        {
+            return !EnemyMoving && !EnemyAttacking && !EnemyReturning;
+        }
+
+        private bool InPlacePlayer()
+        {
+            return !PlayerMoving && !PlayerAttacking && !PlayerReturning;
+        }
+
+        public bool playerTime;
+        
+        private void Update()
+        {
+            if (Enemy is null)
+            {
+                CreateNewEnemy();
+            }
+
+            if (InPlaceEnemy() && InPlacePlayer())
+            {
+                if (playerTime)
+                {
+                    MovePlayer();
+                }
+                else
+                {
+                    MoveEnemy();
+                }
+            }
+
+            if (EnemyFinishedMovingPart1 || PlayerFinishedMovingPart1 )
+            {
+                if (playerTime)
+                {
+                    (PlayerAttack());
+                }
+                else
+                {
+                    (EnemyAttack());
+                }
+            }
+
+            if (EnemyAttacked || PlayerAttacked)
+            {
+                if (playerTime)
+                {
+                    (MovePlayerBack());
+                }
+                else
+                {
+                    (MoveEnemyBack());
+                }
+            }
+
+            if (EnemyFinishedMovingPart2 || PlayerFinishedMovingPart2)
+            {
+                if (playerTime)
+                {
+                    (PlayerRest());
+                }
+                else
+                {
+                    (EnemyRest());
+                }
+            }
+        }
+
+        private void MoveEnemy()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void MovePlayer()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        private void CreateNewEnemy()
+        {
+            throw new NotImplementedException();
+        }
+
+        
+        
+        
+        
+        
+
         public Creature targetCreature;
         public Creature currentCreature;
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         public void OnEnable()
         {
             StartCoroutine(delayAttacks());
