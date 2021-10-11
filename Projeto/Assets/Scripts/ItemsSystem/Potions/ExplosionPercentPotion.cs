@@ -4,13 +4,15 @@ using UnityEngine;
 
 namespace ItemsSystem.Potions
 {
-    public class HealingPotion : Potion
+    public class ExplosionPercentPotion : Potion
     {
-        public float healingPercent = 0.1f;
+        public float dmgPercent = 0.1f;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-            creature.Heal(creature.creatureMaxHealth*healingPercent);
+
+            creature.Damage(creature.creatureMaxHealth * dmgPercent);
+            
             yield break;
         }
     }

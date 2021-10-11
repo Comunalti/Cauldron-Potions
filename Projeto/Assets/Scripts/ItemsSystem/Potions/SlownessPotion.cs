@@ -6,8 +6,8 @@ namespace ItemsSystem.Potions
 {
     public class SlownessPotion: Potion
     {
-        public float stunChance;
-        public float speedReduction;
+        public float stunChance = 0.50f;
+        public float speedReduction = 3;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

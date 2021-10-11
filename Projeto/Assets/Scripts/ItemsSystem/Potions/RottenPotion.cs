@@ -6,8 +6,8 @@ namespace ItemsSystem.Potions
 {
     public class RottenPotion : Potion
     {
-        public float dmg;
-        public float speedReduction;
+        public float dmg = 10; 
+        public float speedReduction = 2;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

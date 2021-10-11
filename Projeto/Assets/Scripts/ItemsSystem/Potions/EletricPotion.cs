@@ -6,8 +6,8 @@ namespace ItemsSystem.Potions
 {
     public class EletricPotion : Potion
     {
-        public float dmg;
-        public float stunChance;
+        public float dmg = 5;
+        public float stunChance = 0.25f;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

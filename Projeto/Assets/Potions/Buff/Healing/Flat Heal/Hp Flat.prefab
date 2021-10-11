@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3547426302764859295}
   - component: {fileID: 3250299229550709463}
   - component: {fileID: 5273675359034066097}
+  - component: {fileID: 3817658164784930350}
   m_Layer: 0
   m_Name: Hp Flat
   m_TagString: Untagged
@@ -132,6 +133,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3817658164784930350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155626220846784852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd196aa4197c45f58d06010c1846ec15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionManager: {fileID: 0}
+  healingFlat: 25
 --- !u!1 &3825474919839546220
 GameObject:
   m_ObjectHideFlags: 0

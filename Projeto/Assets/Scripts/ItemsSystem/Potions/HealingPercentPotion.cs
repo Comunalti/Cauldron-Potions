@@ -4,14 +4,13 @@ using UnityEngine;
 
 namespace ItemsSystem.Potions
 {
-    public class SpeedPotion : Potion
+    public class HealingPercentPotion : Potion
     {
-        public float speed = 2;
+        public float healingPercent = 0.1f;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-
-            creature.AddSpeed(speed);
+            creature.Heal(creature.creatureMaxHealth*healingPercent);
             yield break;
         }
     }

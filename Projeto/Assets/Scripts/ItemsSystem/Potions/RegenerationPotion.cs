@@ -8,8 +8,8 @@ namespace ItemsSystem.Potions
 {
     public class RegenerationPotion : Potion
     {
-        public float healedPercent;
-        public int rounds;
+        public float healedPercent = 0.05f;
+        public int rounds = 4;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

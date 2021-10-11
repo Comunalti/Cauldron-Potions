@@ -6,7 +6,7 @@ namespace ItemsSystem.Potions
 {
     public class ResilientPosition : Potion
     {
-        public float addHealthQuantity = 0.1f;
+        public float addHealthQuantity = 25;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

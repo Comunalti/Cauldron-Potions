@@ -8,9 +8,9 @@ namespace ItemsSystem.Potions
 {
     public class StonePotion : Potion
     {
-        public float dmg;
-        public float stunChance;
-        public float rounds;
+        public float dmg = 3;
+        public float stunChance = 0.50f;
+        public float rounds = 1;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

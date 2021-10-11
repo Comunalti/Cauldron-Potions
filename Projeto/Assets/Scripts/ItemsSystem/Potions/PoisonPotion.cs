@@ -8,8 +8,8 @@ namespace ItemsSystem.Potions
 {
     public class PoisonPotion : Potion
     {
-        public float dmg;
-        public int rounds;
+        public float dmg = 6;
+        public int rounds = 4;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);

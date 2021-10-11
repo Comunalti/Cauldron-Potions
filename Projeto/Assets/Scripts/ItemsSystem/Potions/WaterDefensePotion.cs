@@ -6,12 +6,12 @@ namespace ItemsSystem.Potions
 {
     public class WaterDefensePotion : Potion
     {
-        public float evadePercent;
+        public float evade = 2;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
 
-            creature.AddEvadeChange(evadePercent);
+            creature.AddEvadeChange(evade);
             yield break;
         }
     }

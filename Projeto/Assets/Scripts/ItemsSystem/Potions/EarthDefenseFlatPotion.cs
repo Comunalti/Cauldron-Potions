@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace ItemsSystem.Potions
 {
-    public class SpeedPotion : Potion
+    public class EarthDefenseFlatPotion : Potion
     {
-        public float speed = 2;
+        public float defenseValue = 5;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-
-            creature.AddSpeed(speed);
+                        
+            creature.AddDefense(defenseValue);
             yield break;
         }
     }

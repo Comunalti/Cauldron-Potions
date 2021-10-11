@@ -4,14 +4,13 @@ using UnityEngine;
 
 namespace ItemsSystem.Potions
 {
-    public class SpeedPotion : Potion
+    public class DamageFlatDeltPotion : Potion
     {
-        public float speed = 2;
+        public float DamageFlatDelt = 25;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-
-            creature.AddSpeed(speed);
+            creature.Heal(DamageFlatDelt);
             yield break;
         }
     }
