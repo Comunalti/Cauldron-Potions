@@ -21,7 +21,7 @@ namespace CombatSystem
         public float critChance;
         public float evadePercent;
         private float currentAttack;
-        private float baseAttack;
+        public float baseAttack;
         private float critMultiplier;
 
         
