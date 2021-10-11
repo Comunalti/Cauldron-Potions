@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace PotionSystem
 {
@@ -12,10 +13,12 @@ namespace PotionSystem
 
         public float GenerationDelayTime = 1;
 
-        public Vector3 SpawnPostion;
+        public float Y;
+        public float MinX;
+        public float MaxX;
         public void Start()
         {
-           // StartCoroutine( GenerationRoute());
+           StartCoroutine( GenerationRoute());
         }
 
         public IEnumerator GenerationRoute()
@@ -23,11 +26,11 @@ namespace PotionSystem
 
             while (true)
             {
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(GenerationDelayTime);
 
                 var randomItem = ingredientList.GetRandom();
 
-                var clone = Instantiate(randomItem, SpawnPostion, Extension.GetRandomXYQuaternion());
+                var clone = Instantiate(randomItem, new Vector3(Random.Range(MinX,MaxX),Y), Extension.GetRandomXYQuaternion().normalized);
 
                 clone.AddComponent<ItemWaterMover>();
 

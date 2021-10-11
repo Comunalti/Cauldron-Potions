@@ -11,7 +11,8 @@ namespace ItemsSystem
     public class Cauldron : MonoBehaviourSingleton<Cauldron>
     {
         public List<PotionSystem.Ingredient> cauldronItems = new List<PotionSystem.Ingredient>();
-        public Vector2 spawnPosition;
+        public Vector3 spawnPosition;
+        public Vector2 direction = new Vector2(-1,1);
         public float force;
         public int makedPotions;
 
@@ -77,8 +78,7 @@ namespace ItemsSystem
         {
             print("teaadasd");
             var a = gameObject.GetComponent<Rigidbody2D>();
-            var direction = new Vector2(Random.Range(-1f, 1f), 1);
-            Debug.Log(direction);
+            
             a.AddForce(direction*force,ForceMode2D.Force);
         } 
         

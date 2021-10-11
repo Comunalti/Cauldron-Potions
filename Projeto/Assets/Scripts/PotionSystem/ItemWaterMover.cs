@@ -6,7 +6,7 @@ namespace PotionSystem
     public class ItemWaterMover: MonoBehaviour
     {
         public Transform transform;
-        public Vector3 direction = new Vector3(0,-1,0);
+        public Vector3 direction = new Vector3(0,-3,0);
         public Rigidbody2D rigidbody2D;
         private void Start()
         {
@@ -17,9 +17,7 @@ namespace PotionSystem
 
         private void OnMouseDown()
         {
-            //rigidbody2D.gravityScale = 1
             Destroy(this);
-            
         }
 
         private void Update()
