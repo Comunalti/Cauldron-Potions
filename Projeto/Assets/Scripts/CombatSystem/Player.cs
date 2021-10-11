@@ -6,9 +6,3 @@ public class Player : Creature
 {
     
 }
-
-
-public class Enemy : Creature
-{
-    
-}
