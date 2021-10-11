@@ -15,6 +15,7 @@ namespace CombatSystem
         public float creatureCurrentHealth = 0;
         public new Transform transform;
         public Animator animator;
+        public ParticleSystem particleSystem;
         
         public float defense;
         public float stunChance;
@@ -42,6 +43,7 @@ namespace CombatSystem
         {
             transform = GetComponent<Transform>();
             animator = GetComponent<Animator>();
+            particleSystem = GetComponent<ParticleSystem>();
         }
 
         private List<Action> GetLastList()
@@ -81,9 +83,11 @@ namespace CombatSystem
             RemoveHP(hpToRemove);
         }
 
-        protected virtual void Kill()
+        protected virtual void Kill(Action callback)
         {
-            CreatureDiedEvent.Invoke();
+            transform.DOScale(Vector3.zero, 0.8f).SetEase(Ease.InBounce).SetDelay(0.5f).OnComplete(() => { 
+                particleSystem.Play();
+                callback();});
         }
 
         public void Heal(float healed)
@@ -163,7 +167,7 @@ namespace CombatSystem
             creatureCurrentHealth -= value;
             if (creatureCurrentHealth<=creatureMinHealth)
             {
-                Kill();
+                //Kill();
             }
             HealthChangedEvent.Invoke();
         }

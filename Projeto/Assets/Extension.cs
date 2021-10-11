@@ -39,6 +39,6 @@ public static class Extension
 
     public static Quaternion GetRandomXYQuaternion()
     {
-        return Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
+        return Quaternion.Euler(0, 0, Random.Range(0, 360));
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Collections;
@@ -30,7 +31,11 @@ namespace CombatSystem
                     currentCreature.transform.DOMove(currentCreature.defensePosition, 1f).SetDelay(1.5f).SetEase(Ease.InExpo).OnStepComplete(
                         () =>
                         {
-                            StartCoroutine(DelayChange());
+                            if (!(targetCreature is null) && !(currentCreature is null))
+                            {
+                                StartCoroutine(DelayChange());
+                            }
+                            
                         });
                 });
         }
@@ -46,11 +51,17 @@ namespace CombatSystem
         {
             currentCreature.transform.DOShakePosition(1f,0.3f).OnComplete(()=>
             {
-                targetCreature.Damage(currentCreature.AttackDmg());
+                StartCoroutine(DealDmg());
             });
             
         }
 
+        public IEnumerator DealDmg()
+        {
+            yield return new WaitUntil(()=> !(targetCreature is null) && !(currentCreature is null)  );
+            targetCreature.Damage(currentCreature.AttackDmg());
+        }
+        
         [ContextMenu("ChangeAttacker")]
         public void ChangeAttacker()
         {
@@ -64,6 +75,18 @@ namespace CombatSystem
             {
                 StartAttack();
             });
+        }
+
+        public void AddNewEnemy(GameObject nextEnemy)
+        {
+            if ( targetCreature is Player)
+            {
+                currentCreature = nextEnemy.GetComponent<Creature>();
+            }
+            else if (currentCreature is Player)
+            {
+                targetCreature = nextEnemy.GetComponent<Creature>();
+            }
         }
     }
 }

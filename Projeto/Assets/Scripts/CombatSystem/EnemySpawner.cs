@@ -13,17 +13,28 @@ namespace CombatSystem
         public Vector3 stopPosition;
         public float walkDuration;
         
-        public void CreateNewEnemy()
+        private void CreateNewEnemy()
         {
             var nextEnemy = Instantiate(Prefabs.GetRandom(),spawnPosition,Quaternion.identity);
-            BattleManager.Instance.AddCreatureToFight(nextEnemy.GetComponent<Creature>());
+            //BattleManager.Instance.AddCreatureToFight(nextEnemy.GetComponent<Creature>());
             
-            nextEnemy.transform.DOMove(stopPosition,walkDuration).OnComplete(() => { StartCoroutine(BattleManager.Instance.Fight()); });
+            nextEnemy.transform.DOMove(stopPosition,walkDuration).OnComplete(() =>
+            {
+                AttackManager.Instance.AddNewEnemy(nextEnemy);
+
+                //StartCoroutine(BattleManager.Instance.Fight());
+            });
         }
 
-        public IEnumerator NextEnemy()
+        private IEnumerator NextEnemy()
         {
             yield return new WaitForSeconds(1);
+            CreateNewEnemy();
+        }
+
+        public void CreateNew()
+        {
+            StartCoroutine(NextEnemy());
         }
     }
 }
