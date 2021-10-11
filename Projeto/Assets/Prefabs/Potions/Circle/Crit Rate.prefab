@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7756598295678776263}
   - component: {fileID: -4439146727771315054}
   - component: {fileID: -220871511025345472}
+  - component: {fileID: -7566969437339918460}
   m_Layer: 0
   m_Name: Crit Rate
   m_TagString: Untagged
@@ -185,6 +186,20 @@ PolygonCollider2D:
       - {x: 0.3376572, y: 0.10645959}
       - {x: 0.18906188, y: 0.265034}
       - {x: 0.106459856, y: 0.49514475}
+--- !u!114 &-7566969437339918460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050358308113838588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6884c58c281c74dbdb6d9aad974d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionManager: {fileID: 0}
+  critRateChange: 0.1
 --- !u!1 &6564852717362706056
 GameObject:
   m_ObjectHideFlags: 0

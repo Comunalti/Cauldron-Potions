@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 6494320710580662458}
   - component: {fileID: 7748689817519124802}
   - component: {fileID: -2442891269887641671}
+  - component: {fileID: -823390379791443194}
   m_Layer: 0
   m_Name: Damage Flat
   m_TagString: Untagged
@@ -202,3 +203,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionManager: {fileID: 0}
   dmg: 30
+--- !u!60 &-823390379791443194
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7664439006802299874}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.16670388, y: 0.4661504}
+      - {x: -0.124697566, y: 0.18531418}
+      - {x: -0.2606356, y: -0.06322682}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.27997816, y: -0.10843861}
+      - {x: 0.13276342, y: 0.1733023}
+      - {x: 0.16688555, y: 0.47098613}
