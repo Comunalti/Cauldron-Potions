@@ -13,7 +13,7 @@ namespace CombatSystem
         public Creature targetCreature;
         public Creature currentCreature;
 
-        public void Start()
+        public void OnEnable()
         {
             StartCoroutine(delayAttacks());
         }
@@ -95,6 +95,7 @@ namespace CombatSystem
 
         public void AddNewEnemy(GameObject nextEnemy)
         {
+            print("fsudfhuasfyhusdfhu");
             if ( targetCreature is Player)
             {
                 currentCreature = nextEnemy.GetComponent<Creature>();

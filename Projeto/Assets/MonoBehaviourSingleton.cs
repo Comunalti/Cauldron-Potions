@@ -26,8 +26,8 @@ public class MonoBehaviourSingleton<T> : MonoBehaviour where T : MonoBehaviour
         get
         {
             if (mInstance == null){
-                GameObject go = new GameObject();
-                mInstance = go.AddComponent<T>();
+                //GameObject go = new GameObject();
+                //mInstance = go.AddComponent<T>();
             }
             return mInstance;
         }
