@@ -17,7 +17,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/Potions/FirePotion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotionSystem/PotionResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/Potions/CritRatePotion.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/LeaveGame.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zFRM0DArXFBHJGxYACbTwaR5Wl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
