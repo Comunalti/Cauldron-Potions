@@ -198,5 +198,6 @@ namespace CombatSystem
         {
             critChance += critRateChange;
         }
+        
     }
 }

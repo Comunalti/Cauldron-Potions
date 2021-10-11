@@ -32,21 +32,33 @@ namespace CombatSystem
         
         private bool InPlaceEnemy()
         {
-            return !EnemyMoving && !EnemyAttacking && !EnemyReturning;
+            return (!EnemyMoving && !EnemyAttacking && !EnemyReturning) && EnemyBackToRest;
         }
 
         private bool InPlacePlayer()
         {
-            return !PlayerMoving && !PlayerAttacking && !PlayerReturning;
+            return (!PlayerMoving && !PlayerAttacking && !PlayerReturning) && EnemyBackToRest;
         }
 
         public bool playerTime;
+
+        private bool EnemyFinishedMovingPart1;
+        private bool EnemyAttacked;
+        private bool EnemyFinishedMovingPart2;
+        private bool EnemyBackToRest;
+        
+        
+        private bool PlayerFinishedMovingPart1;
+        private bool PlayerAttacked;
+        private bool PlayerFinishedMovingPart2;
+        private bool PlayerBackToRest;
         
         private void Update()
         {
             if (Enemy is null)
             {
                 CreateNewEnemy();
+                return;
             }
 
             if (InPlaceEnemy() && InPlacePlayer())
@@ -65,11 +77,13 @@ namespace CombatSystem
             {
                 if (playerTime)
                 {
-                    (PlayerAttack());
+                    EnemyFinishedMovingPart1 = false;
+                    PlayerAttack();
                 }
                 else
                 {
-                    (EnemyAttack());
+                    PlayerFinishedMovingPart1 = false;
+                    EnemyAttack();
                 }
             }
 
@@ -77,11 +91,13 @@ namespace CombatSystem
             {
                 if (playerTime)
                 {
-                    (MovePlayerBack());
+                    PlayerAttacked = false;
+                    MovePlayerBack();
                 }
                 else
                 {
-                    (MoveEnemyBack());
+                    EnemyAttacked = false;
+                    MoveEnemyBack();
                 }
             }
 
@@ -89,141 +105,185 @@ namespace CombatSystem
             {
                 if (playerTime)
                 {
-                    (PlayerRest());
+                    PlayerFinishedMovingPart2 = false;
+                    PlayerRest();
                 }
                 else
                 {
-                    (EnemyRest());
+                    EnemyFinishedMovingPart2 = false;
+                   EnemyRest();
                 }
             }
         }
 
+        private void EnemyRest()
+        {
+            EnemyBackToRest = true;
+            playerTime = true;
+        }
+
+        private void PlayerRest()
+        {
+            PlayerBackToRest = true;
+            playerTime = false;
+        }
+
+        private void MoveEnemyBack()
+        {
+            Enemy.transform.DOMove(Enemy.defensePosition, 1f).OnComplete(() => { EnemyFinishedMovingPart2 = true;});
+        }
+
+        private void MovePlayerBack()
+        {
+            Player.transform.DOMove(Player.defensePosition, 1f).OnComplete(() => { PlayerFinishedMovingPart2 = true;});
+        }
+
+        private void EnemyAttack()
+        {
+            EnemyAttacked = true;
+
+            Player.Damage(Enemy.AttackDmg());
+        }
+
+        private void PlayerAttack()
+        {
+            PlayerAttacked = true;
+
+            Enemy.Damage(Player.AttackDmg());
+        }
+
         private void MoveEnemy()
         {
-            throw new NotImplementedException();
+            Enemy.transform.DOMove(Enemy.attackPosition, 1f).OnComplete(() => { EnemyFinishedMovingPart1 = true;});
         }
 
         private void MovePlayer()
         {
-            throw new NotImplementedException();
+            Player.transform.DOMove(Player.attackPosition, 1f).OnComplete(() => { PlayerFinishedMovingPart1 = true;});
         }
 
 
         private void CreateNewEnemy()
         {
-            throw new NotImplementedException();
+            EnemySpawner.Instance.CreateNew();
         }
 
-        
-        
-        
-        
-        
-
-        public Creature targetCreature;
-        public Creature currentCreature;
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        public void OnEnable()
+        public void MakeEnemyWalk()
         {
-            StartCoroutine(delayAttacks());
-        }
-
-        public IEnumerator delayAttacks()
-        {
-            yield return new WaitForSeconds(4);
-            StartAttack();
+            EnemyMoving = true;
+            Enemy.transform.DOMove(Enemy.defensePosition, 1f).OnComplete(() => { EnemyMoving = false; });
         }
         
         
         
-        [ContextMenu("StartAttack")]
-
-        public void StartAttack()
-        {
-            targetCreature.UpdateAfterAttack();
-            currentCreature.UpdateBeforeAttack();
-            TweenAttack();
-        }
-
-        [ContextMenu("TweenAtcck")]
-        public void TweenAttack()
-        {
-            currentCreature.transform.DOMove(currentCreature.attackPosition, 1f).SetEase(Ease.InExpo).OnStepComplete(
-                () =>
-                {
-                    Attack();
-                    currentCreature.transform.DOMove(currentCreature.defensePosition, 1f).SetDelay(1.5f).SetEase(Ease.InExpo).OnStepComplete(
-                        () =>
-                        {
-                            if (!(targetCreature is null) && !(currentCreature is null))
-                            {
-                                StartCoroutine(DelayChange());
-                            }
-                            
-                        });
-                });
-        }
-
-        private IEnumerator DelayChange()
-        {
-            yield return new WaitForSeconds(.5f);
-            ChangeAttacker();
-        }
         
-        [ContextMenu("Attack")]
-        public void Attack()
-        {
-            currentCreature.transform.DOShakePosition(1f,0.3f).OnComplete(()=>
-            {
-                StartCoroutine(DealDmg());
-            });
-            
-        }
-
-        public IEnumerator DealDmg()
-        {
-            print("first part");
-            yield return new WaitUntil(()=> !(targetCreature is null) && !(currentCreature is null));
-            print("dmg");
-            targetCreature.Damage(currentCreature.AttackDmg());
-        }
+        //
+        //
+        // public Creature targetCreature;
+        // public Creature currentCreature;
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        // public void OnEnable()
+        // {
+        //     StartCoroutine(delayAttacks());
+        // }
+        //
+        // public IEnumerator delayAttacks()
+        // {
+        //     yield return new WaitForSeconds(4);
+        //     StartAttack();
+        // }
+        //
+        //
+        //
+        // [ContextMenu("StartAttack")]
+        //
+        // public void StartAttack()
+        // {
+        //     targetCreature.UpdateAfterAttack();
+        //     currentCreature.UpdateBeforeAttack();
+        //     TweenAttack();
+        // }
+        //
+        // [ContextMenu("TweenAtcck")]
+        // public void TweenAttack()
+        // {
+        //     currentCreature.transform.DOMove(currentCreature.attackPosition, 1f).SetEase(Ease.InExpo).OnStepComplete(
+        //         () =>
+        //         {
+        //             Attack();
+        //             currentCreature.transform.DOMove(currentCreature.defensePosition, 1f).SetDelay(1.5f).SetEase(Ease.InExpo).OnStepComplete(
+        //                 () =>
+        //                 {
+        //                     if (!(targetCreature is null) && !(currentCreature is null))
+        //                     {
+        //                         StartCoroutine(DelayChange());
+        //                     }
+        //                     
+        //                 });
+        //         });
+        // }
+        //
+        // private IEnumerator DelayChange()
+        // {
+        //     yield return new WaitForSeconds(.5f);
+        //     ChangeAttacker();
+        // }
+        //
+        // [ContextMenu("Attack")]
+        // public void Attack()
+        // {
+        //     currentCreature.transform.DOShakePosition(1f,0.3f).OnComplete(()=>
+        //     {
+        //         StartCoroutine(DealDmg());
+        //     });
+        //     
+        // }
+        //
+        // public IEnumerator DealDmg()
+        // {
+        //     print("first part");
+        //     yield return new WaitUntil(()=> !(targetCreature is null) && !(currentCreature is null));
+        //     print("dmg");
+        //     targetCreature.Damage(currentCreature.AttackDmg());
+        // }
+        //
+        // [ContextMenu("ChangeAttacker")]
+        // public void ChangeAttacker()
+        // {
+        //     var current = currentCreature;
+        //     var target = targetCreature;
+        //
+        //     currentCreature = target;
+        //     targetCreature = current;
+        //     
+        //     currentCreature.transform.DOShakePosition(0.5f,0.1f).OnComplete(() =>
+        //     {
+        //         StartAttack();
+        //     });
+        // }
+        //
+        // public void AddNewEnemy(GameObject nextEnemy)
+        // {
+        //     print("fsudfhuasfyhusdfhu");
+        //     if ( targetCreature is Player)
+        //     {
+        //         currentCreature = nextEnemy.GetComponent<Creature>();
+        //     }
+        //     else if (currentCreature is Player)
+        //     {
+        //         targetCreature = nextEnemy.GetComponent<Creature>();
+        //     }
+        // }
         
-        [ContextMenu("ChangeAttacker")]
-        public void ChangeAttacker()
-        {
-            var current = currentCreature;
-            var target = targetCreature;
-
-            currentCreature = target;
-            targetCreature = current;
-            
-            currentCreature.transform.DOShakePosition(0.5f,0.1f).OnComplete(() =>
-            {
-                StartAttack();
-            });
-        }
-
-        public void AddNewEnemy(GameObject nextEnemy)
-        {
-            print("fsudfhuasfyhusdfhu");
-            if ( targetCreature is Player)
-            {
-                currentCreature = nextEnemy.GetComponent<Creature>();
-            }
-            else if (currentCreature is Player)
-            {
-                targetCreature = nextEnemy.GetComponent<Creature>();
-            }
-        }
     }
 }
