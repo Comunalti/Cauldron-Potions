@@ -16,13 +16,16 @@ namespace ItemsSystem
         public float force;
         public int makedPotions;
 
+        public ParticleSystem FailParticleSystem;
+
+        public ParticleSystem GoodParticleSystem;
         // public GameObject goodPrefab;
         // public GameObject badPrefab;
 
-        private Transform _transform;
+        public Transform squashTransform;
         protected override void SingletonStarted()
         {
-            _transform = GetComponent<Transform>();
+            //squashTransform = GetComponent<Transform>();
         }
 
         public void Insert(Ingredient ingredient)
@@ -47,7 +50,7 @@ namespace ItemsSystem
         [ContextMenu("tween")]
         private void TweenSquash()
         {
-            var a =_transform.DOScale(Vector3.one/2,0.5f).SetEase(Ease.InQuad).SetLoops(2,LoopType.Yoyo);//.OnComplete()
+            var a =squashTransform.DOScale(Vector3.one/2,0.5f).SetEase(Ease.InQuad).SetLoops(2,LoopType.Yoyo);//.OnComplete()
             a.OnStepComplete(() => { a.SetEase(Ease.InBounce); });
         }
         
@@ -58,13 +61,17 @@ namespace ItemsSystem
             print($"potion result is {potionResult}");
             if (potionResult is null)
             {
-                //fail
+                FailParticleSystem.Play();
+                var quaternion = squashTransform.rotation;
+                squashTransform.DOShakeRotation(0.8f, 15);
+                squashTransform.rotation = quaternion ;
                 print("falhou");
                 Reset();
             }
             else
             {
                 //sucess
+                GoodParticleSystem.Play();
                 print("sucesso");
                 var gameObjectClone = potionResult.GetInstance(spawnPosition);
                 ThrowItem(gameObjectClone);
@@ -78,7 +85,9 @@ namespace ItemsSystem
         {
             print("teaadasd");
             var a = gameObject.GetComponent<Rigidbody2D>();
-            
+            var scale = squashTransform.localScale;
+            squashTransform.DOShakeScale(0.8f, 0.5f);
+            squashTransform.localScale = scale;
             a.AddForce(direction*force,ForceMode2D.Force);
         } 
         

@@ -30,7 +30,7 @@ namespace PotionSystem
 
                 var randomItem = ingredientList.GetRandom();
 
-                var clone = Instantiate(randomItem, new Vector3(Random.Range(MinX,MaxX),Y), Extension.GetRandomXYQuaternion().normalized);
+                var clone = Instantiate(randomItem, new Vector3(Random.Range(MinX,MaxX),Y,-5), Extension.GetRandomXYQuaternion().normalized);
 
                 clone.AddComponent<ItemWaterMover>();
 
