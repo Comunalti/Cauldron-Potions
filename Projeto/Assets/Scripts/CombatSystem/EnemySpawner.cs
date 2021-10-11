@@ -13,6 +13,7 @@ namespace CombatSystem
         public Vector3 stopPosition;
         public float walkDuration;
         
+        
         private void CreateNewEnemy()
         {
             var nextEnemy = Instantiate(Prefabs.GetRandom(),spawnPosition,Quaternion.identity);

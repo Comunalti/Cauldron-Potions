@@ -43,7 +43,7 @@ namespace ItemsSystem
         [ContextMenu("reset")]
         private void Reset()
         {
-            print("limpou");
+            //print("limpou");
             cauldronItems = new List<PotionSystem.Ingredient>();
         }
         
@@ -58,7 +58,7 @@ namespace ItemsSystem
         public IEnumerator PreparePotion()
         {
             var potionResult = PotionManager.Instance.GetPotionResult(cauldronItems.ToArray());
-            print($"potion result is {potionResult}");
+            //print($"potion result is {potionResult}");
             if (potionResult is null)
             {
                 FailParticleSystem.Play();
@@ -69,14 +69,14 @@ namespace ItemsSystem
                 var a =squashTransform.DOScale(Vector3.one/2,0.5f).SetEase(Ease.InQuad).SetLoops(2,LoopType.Yoyo);//.OnComplete()
                             a.OnStepComplete(() => { a.SetEase(Ease.InBounce); }).OnComplete(()=>squashTransform.localScale= Vector3.one);
                 
-                print("falhou");
+                //print("falhou");
                 Reset();
             }
             else
             {
                 //sucess
                 GoodParticleSystem.Play();
-                print("sucesso");
+                //print("sucesso");
                 var gameObjectClone = potionResult.GetInstance(spawnPosition);
                 ThrowItem(gameObjectClone);
                 makedPotions += 1;
@@ -87,7 +87,7 @@ namespace ItemsSystem
 
         public void ThrowItem(GameObject gameObject)
         {
-            print("teaadasd");
+            //print("teaadasd");
             var b = gameObject.GetComponent<Rigidbody2D>();
             //var scale = squashTransform.localScale;
             //squashTransform.DOShakeScale(0.8f, 0.5f);
@@ -102,10 +102,10 @@ namespace ItemsSystem
         public void OnCollisionEnter2D(Collision2D other)
         {
             var a = other.gameObject.GetComponent<Ingredient>();
-            Debug.Log(a);
+            //Debug.Log(a);
             if (a is null)
             {
-                Debug.Log("asdafhjsfdhjsdfhjhj");
+                //Debug.Log("asdafhjsfdhjsdfhjhj");
                 ThrowItem(other.gameObject);
             }
             else
