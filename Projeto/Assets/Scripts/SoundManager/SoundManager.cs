@@ -19,7 +19,9 @@ public class SoundManager : MonoBehaviour
     public static void PlaySound()
     {
         GameObject soundGameObject = new GameObject("Sound");
-        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>;
+        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+        audioSource.PlayOneShot(GameAssets.i.playerAttack);
+
 
     }
 }
