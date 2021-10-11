@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/ISelectable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/Potions/AttackFlatPotion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/destruir.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RestartGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemsSystem/Potions/FirePotion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotionSystem/PotionResult.cs" root0="FORCE_HIGHLIGHTING" />
@@ -96,39 +97,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CombatSystem/AttackManager.cs</url>
-          <line>57</line>
+          <line>70</line>
           <properties documentPath="C:\Users\frps2\Documents\GitHub\Nova pasta\Projeto\Assets\Scripts\CombatSystem\AttackManager.cs" initialLine="56" containingFunctionPresentation="method 'Update'">
             <startOffsets>
-              <option value="1615" />
+              <option value="1968" />
             </startOffsets>
             <endOffsets>
-              <option value="1616" />
+              <option value="1969" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CombatSystem/AttackManager.cs</url>
-          <line>87</line>
+          <line>100</line>
           <properties documentPath="C:\Users\frps2\Documents\GitHub\Nova pasta\Projeto\Assets\Scripts\CombatSystem\AttackManager.cs" initialLine="86" containingFunctionPresentation="method 'Update'">
             <startOffsets>
-              <option value="2355" />
+              <option value="2708" />
             </startOffsets>
             <endOffsets>
-              <option value="2387" />
+              <option value="2740" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CombatSystem/AttackManager.cs</url>
-          <line>82</line>
+          <line>95</line>
           <properties documentPath="C:\Users\frps2\Documents\GitHub\Nova pasta\Projeto\Assets\Scripts\CombatSystem\AttackManager.cs" initialLine="81" containingFunctionPresentation="method 'Update'">
             <startOffsets>
-              <option value="2232" />
+              <option value="2585" />
             </startOffsets>
             <endOffsets>
-              <option value="2241" />
+              <option value="2594" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

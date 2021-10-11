@@ -4937,9 +4937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c771c7fe70432e83ae71e4023fad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatureMaxHealth: 50
+  creatureMaxHealth: 20
   creatureMinHealth: 0
-  creatureCurrentHealth: 50
+  creatureCurrentHealth: 20
   transform: {fileID: 7905938379111568520}
   animator: {fileID: 0}
   particleSystem: {fileID: 0}
@@ -4947,7 +4947,7 @@ MonoBehaviour:
   stunChance: 0
   critChance: 1
   evadePercent: 1
-  baseAttack: 10
+  baseAttack: 7
   speed: 1
   stunnedLastFrame: 0
   attackPosition: {x: 1.18, y: -4.46, z: 0}

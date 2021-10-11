@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 254862465}
   - component: {fileID: 254862464}
   - component: {fileID: 254862463}
+  - component: {fileID: 254862466}
   m_Layer: 0
   m_Name: TempFloor
   m_TagString: Untagged
@@ -369,12 +370,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254862462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -16.22, z: -1}
+  m_LocalPosition: {x: -0.67, y: -22.88, z: -1}
   m_LocalScale: {x: 51.815594, y: 3.93063, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254862466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254862462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ecff78d049d0f4e8ada37b6cc5ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &352359606
 PrefabInstance:
   m_ObjectHideFlags: 0
