@@ -44,7 +44,7 @@ namespace CombatSystem
         {
             transform = GetComponent<Transform>();
             animator = GetComponent<Animator>();
-            particleSystem = GetComponent<ParticleSystem>();
+            particleSystem = GetComponentInChildren<ParticleSystem>();
         }
 
         private List<Action> GetLastList()
@@ -81,6 +81,7 @@ namespace CombatSystem
         public void Damage(float dmg)
         {
             print(dmg);
+            particleSystem.Play();
             var hpToRemove = Mathf.Max((dmg - defense) * (Random.Range(0f,1f)<evadePercent?1f:0f),0) ;
             RemoveHP(hpToRemove);
         }

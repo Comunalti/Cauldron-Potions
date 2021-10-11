@@ -138,7 +138,7 @@ MonoBehaviour:
   creatureCurrentHealth: 20
   transform: {fileID: 5844587984515805774}
   animator: {fileID: 0}
-  particleSystem: {fileID: 0}
+  particleSystem: {fileID: 1094118532490552984}
   defense: 5
   stunChance: 0
   critChance: 1
