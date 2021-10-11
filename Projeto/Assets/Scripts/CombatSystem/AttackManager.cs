@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Collections;
+using UnityEditor;
 using UnityEngine;
 
 namespace CombatSystem
@@ -12,6 +13,19 @@ namespace CombatSystem
         public Creature targetCreature;
         public Creature currentCreature;
 
+        public void Start()
+        {
+            StartCoroutine(delayAttacks());
+        }
+
+        public IEnumerator delayAttacks()
+        {
+            yield return new WaitForSeconds(4);
+            StartAttack();
+        }
+        
+        
+        
         [ContextMenu("StartAttack")]
 
         public void StartAttack()
@@ -58,7 +72,9 @@ namespace CombatSystem
 
         public IEnumerator DealDmg()
         {
-            yield return new WaitUntil(()=> !(targetCreature is null) && !(currentCreature is null)  );
+            print("first part");
+            yield return new WaitUntil(()=> !(targetCreature is null) && !(currentCreature is null));
+            print("dmg");
             targetCreature.Damage(currentCreature.AttackDmg());
         }
         

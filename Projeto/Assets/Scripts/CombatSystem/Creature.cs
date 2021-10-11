@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -79,7 +80,8 @@ namespace CombatSystem
         
         public void Damage(float dmg)
         {
-            var hpToRemove = Mathf.Max((dmg - defense) * (Random.Range(0f,1f)<evadePercent?0f:1f),0) ;
+            print(dmg);
+            var hpToRemove = Mathf.Max((dmg - defense) * (Random.Range(0f,1f)<evadePercent?1f:0f),0) ;
             RemoveHP(hpToRemove);
         }
 
