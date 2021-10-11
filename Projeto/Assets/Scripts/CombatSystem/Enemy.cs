@@ -9,8 +9,7 @@ public class Enemy : Creature
 
     private void Update()
     {
-        print("asdsad");
-        barra.sizeDelta = new Vector2(600 * creatureCurrentHealth / creatureMaxHealth,50);
+        barra.sizeDelta = new Vector2(300 * creatureCurrentHealth / creatureMaxHealth,30);
         if (base.creatureCurrentHealth<=base.creatureMinHealth)
         {
             EnemySpawner.Instance.CreateNew();

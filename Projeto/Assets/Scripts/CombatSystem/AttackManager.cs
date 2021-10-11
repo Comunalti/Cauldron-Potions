@@ -13,22 +13,22 @@ namespace CombatSystem
         public Creature Enemy;
         public Creature Player;
 
-        private bool EnemyMoving;
-        private bool EnemyAttacking;
-        private bool EnemyReturning;
+        public bool EnemyMoving;
+        public bool EnemyAttacking;
+        public bool EnemyReturning;
         
-        private bool LastEnemyMoving;
-        private bool LastEnemyAttacking;
-        private bool LastEnemyReturning;
+        public bool LastEnemyMoving;
+        public bool LastEnemyAttacking;
+        public bool LastEnemyReturning;
         
         
-        private bool PlayerMoving;
-        private bool PlayerAttacking;
-        private bool PlayerReturning;
+        public bool PlayerMoving;
+        public bool PlayerAttacking;
+        public bool PlayerReturning;
         
-        private bool LastPlayerMoving;
-        private bool LastPlayerAttacking;
-        private bool LastPlayerReturning;
+        public bool LastPlayerMoving;
+        public bool LastPlayerAttacking;
+        public bool LastPlayerReturning;
         
         private bool InPlaceEnemy()
         {
@@ -37,32 +37,48 @@ namespace CombatSystem
 
         private bool InPlacePlayer()
         {
-            return (!PlayerMoving && !PlayerAttacking && !PlayerReturning) && EnemyBackToRest;
+            return (!PlayerMoving && !PlayerAttacking && !PlayerReturning) && PlayerBackToRest;
         }
 
-        public bool playerTime;
+        public bool playerTime = false;
 
-        private bool EnemyFinishedMovingPart1;
-        private bool EnemyAttacked;
-        private bool EnemyFinishedMovingPart2;
-        private bool EnemyBackToRest;
+        public bool EnemyFinishedMovingPart1;
+        public bool EnemyAttacked;
+        public bool EnemyFinishedMovingPart2;
+        public bool EnemyBackToRest = true;
         
         
-        private bool PlayerFinishedMovingPart1;
-        private bool PlayerAttacked;
-        private bool PlayerFinishedMovingPart2;
-        private bool PlayerBackToRest;
-        
+        public bool PlayerFinishedMovingPart1;
+        public bool PlayerAttacked;
+        public bool PlayerFinishedMovingPart2;
+        public bool PlayerBackToRest = true;
+
+
+        public void resetar()
+        {
+         EnemyFinishedMovingPart1 = false;
+        EnemyAttacked = false;
+         EnemyFinishedMovingPart2=false;
+       EnemyBackToRest = true;
+            PlayerFinishedMovingPart1 = false;
+            PlayerAttacked = false;
+                PlayerFinishedMovingPart2 = false;
+                PlayerBackToRest = true;
+        }
+
+        public int round = 6;
         private void Update()
         {
+            
             if (Enemy is null)
             {
                 CreateNewEnemy();
                 return;
             }
 
-            if (InPlaceEnemy() && InPlacePlayer())
+            if (InPlaceEnemy() && InPlacePlayer() )
             {
+                print("aaa");
                 if (playerTime)
                 {
                     MovePlayer();
@@ -77,12 +93,12 @@ namespace CombatSystem
             {
                 if (playerTime)
                 {
-                    EnemyFinishedMovingPart1 = false;
+                    PlayerFinishedMovingPart1 = false;
                     PlayerAttack();
                 }
                 else
                 {
-                    PlayerFinishedMovingPart1 = false;
+                    EnemyFinishedMovingPart1= false;
                     EnemyAttack();
                 }
             }
@@ -130,11 +146,13 @@ namespace CombatSystem
 
         private void MoveEnemyBack()
         {
+            EnemyBackToRest = false;
             Enemy.transform.DOMove(Enemy.defensePosition, 1f).OnComplete(() => { EnemyFinishedMovingPart2 = true;});
         }
 
         private void MovePlayerBack()
         {
+            PlayerBackToRest = false;
             Player.transform.DOMove(Player.defensePosition, 1f).OnComplete(() => { PlayerFinishedMovingPart2 = true;});
         }
 
@@ -154,11 +172,13 @@ namespace CombatSystem
 
         private void MoveEnemy()
         {
+            EnemyBackToRest = false;
             Enemy.transform.DOMove(Enemy.attackPosition, 1f).OnComplete(() => { EnemyFinishedMovingPart1 = true;});
         }
 
         private void MovePlayer()
         {
+            PlayerBackToRest = false;
             Player.transform.DOMove(Player.attackPosition, 1f).OnComplete(() => { PlayerFinishedMovingPart1 = true;});
         }
 
@@ -170,6 +190,7 @@ namespace CombatSystem
 
         public void MakeEnemyWalk()
         {
+            print("enemy walking");
             EnemyMoving = true;
             Enemy.transform.DOMove(Enemy.defensePosition, 1f).OnComplete(() => { EnemyMoving = false; });
         }

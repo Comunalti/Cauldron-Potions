@@ -23,6 +23,8 @@ namespace CombatSystem
             enemy.barra = barra;
             AttackManager.Instance.Enemy = nextEnemy.GetComponent<Creature>();
             AttackManager.Instance.MakeEnemyWalk();
+            AttackManager.Instance.playerTime = true;
+            AttackManager.Instance.resetar();
         }
         
 

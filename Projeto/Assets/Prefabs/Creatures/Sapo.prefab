@@ -4940,7 +4940,7 @@ MonoBehaviour:
   creatureMaxHealth: 50
   creatureMinHealth: 0
   creatureCurrentHealth: 50
-  transform: {fileID: 0}
+  transform: {fileID: 6397106339293319572}
   animator: {fileID: 0}
   particleSystem: {fileID: 0}
   defense: 5
@@ -4952,3 +4952,4 @@ MonoBehaviour:
   stunnedLastFrame: 0
   attackPosition: {x: 1.07, y: -3.34, z: 0}
   defensePosition: {x: 0.96, y: 9.13, z: 0}
+  barra: {fileID: 0}
