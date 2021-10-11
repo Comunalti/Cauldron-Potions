@@ -12,6 +12,7 @@ namespace ItemsSystem
         public List<PotionSystem.Ingredient> cauldronItems = new List<PotionSystem.Ingredient>();
         public Vector2 spawnPosition;
         public float force;
+        public int makedPotions;
 
         // public GameObject goodPrefab;
         // public GameObject badPrefab;
@@ -65,6 +66,7 @@ namespace ItemsSystem
                 print("sucesso");
                 var gameObjectClone = potionResult.GetInstance(spawnPosition);
                 ThrowItem(gameObjectClone);
+                makedPotions += 1;
                 Reset();
             }
             yield break;

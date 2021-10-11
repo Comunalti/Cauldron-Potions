@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace ItemsSystem.Potions
 {
-    public class DamageFlatDeltPotion : Potion
+    public class AttackFlatPotion : Potion
     {
-        public float DamageFlatDelt = 25;
+        public float attackFlatBonus = 10;
         protected override IEnumerator MainEffect(Creature creature)
         {
             yield return new WaitForSeconds(1);
-            creature.Heal(DamageFlatDelt);
+            creature.addAttack(attackFlatBonus);
             yield break;
         }
     }
