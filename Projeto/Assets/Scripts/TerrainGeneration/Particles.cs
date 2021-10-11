@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Particlesaaa : MonoBehaviour
+public class Particles : MonoBehaviour
 {
-
     public bool water;
     public bool cauldron;
 
@@ -37,6 +36,7 @@ public class Particlesaaa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+}
 }
